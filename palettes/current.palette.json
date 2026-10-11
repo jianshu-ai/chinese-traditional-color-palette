@@ -1,0 +1,8082 @@
+{
+  "schema_version": "1.0.0",
+  "palette_id": "gugong-traditional-v2-final",
+  "display_name": "中国传统色第二版终审色表",
+  "color_space": "sRGB",
+  "source": {
+    "title": "《中国传统色：故宫里的色彩美学》第二版",
+    "authors": [
+      "郭浩",
+      "李健明"
+    ],
+    "publisher": "中信出版社",
+    "conversion": "终审色表结构化导入；RGB为运行屏幕基色；HEX/Oklab/亮度由加载器派生",
+    "note": "公开版保留书名和书中页码；不包含原始扫描图片、本机路径和内部文件定位。"
+  },
+  "colors": [
+    {
+      "color_id": "002001",
+      "name": "栀子",
+      "rgb": {
+        "R": 250,
+        "G": 192,
+        "B": 61
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 0,
+          "M": 30,
+          "Y": 80,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "025"
+      }
+    },
+    {
+      "color_id": "002002",
+      "name": "黄琉璃",
+      "rgb": {
+        "R": 229,
+        "G": 168,
+        "B": 75
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 10,
+          "M": 40,
+          "Y": 75,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "017"
+      }
+    },
+    {
+      "color_id": "002003",
+      "name": "金珀",
+      "rgb": {
+        "R": 217,
+        "G": 136,
+        "B": 61
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 15,
+          "M": 55,
+          "Y": 80,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "089"
+      }
+    },
+    {
+      "color_id": "002004",
+      "name": "缃叶",
+      "rgb": {
+        "R": 236,
+        "G": 212,
+        "B": 82
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 10,
+          "M": 15,
+          "Y": 75,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "005"
+      }
+    },
+    {
+      "color_id": "002005",
+      "name": "雌黄",
+      "rgb": {
+        "R": 233,
+        "G": 195,
+        "B": 80
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 10,
+          "M": 25,
+          "Y": 75,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "081"
+      }
+    },
+    {
+      "color_id": "002006",
+      "name": "黄白游",
+      "rgb": {
+        "R": 255,
+        "G": 247,
+        "B": 153
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 0,
+          "M": 0,
+          "Y": 50,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "005"
+      }
+    },
+    {
+      "color_id": "002007",
+      "name": "土黄",
+      "rgb": {
+        "R": 219,
+        "G": 156,
+        "B": 94
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 15,
+          "M": 45,
+          "Y": 65,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "089"
+      }
+    },
+    {
+      "color_id": "002008",
+      "name": "杏黄",
+      "rgb": {
+        "R": 217,
+        "G": 135,
+        "B": 0
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 15,
+          "M": 55,
+          "Y": 100,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "075"
+      }
+    },
+    {
+      "color_id": "002009",
+      "name": "女贞黄",
+      "rgb": {
+        "R": 247,
+        "G": 238,
+        "B": 173
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 5,
+          "M": 5,
+          "Y": 40,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "173"
+      }
+    },
+    {
+      "color_id": "002010",
+      "name": "日辉",
+      "rgb": {
+        "R": 229,
+        "G": 191,
+        "B": 94
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 12,
+          "M": 27,
+          "Y": 69,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "081"
+      }
+    },
+    {
+      "color_id": "002011",
+      "name": "松花",
+      "rgb": {
+        "R": 255,
+        "G": 238,
+        "B": 111
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 0,
+          "M": 5,
+          "Y": 65,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "005"
+      }
+    },
+    {
+      "color_id": "002012",
+      "name": "黄不老",
+      "rgb": {
+        "R": 219,
+        "G": 155,
+        "B": 52
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 15,
+          "M": 45,
+          "Y": 85,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "025"
+      }
+    },
+    {
+      "color_id": "002013",
+      "name": "郁金裙",
+      "rgb": {
+        "R": 209,
+        "G": 139,
+        "B": 6
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 20,
+          "M": 52,
+          "Y": 100,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "075"
+      }
+    },
+    {
+      "color_id": "002014",
+      "name": "绢纨",
+      "rgb": {
+        "R": 236,
+        "G": 224,
+        "B": 147
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 10,
+          "M": 10,
+          "Y": 50,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "173"
+      }
+    },
+    {
+      "color_id": "002015",
+      "name": "谷黄",
+      "rgb": {
+        "R": 217,
+        "G": 170,
+        "B": 93
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 17,
+          "M": 37,
+          "Y": 68,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "151"
+      }
+    },
+    {
+      "color_id": "002016",
+      "name": "黄栗留",
+      "rgb": {
+        "R": 254,
+        "G": 220,
+        "B": 94
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 0,
+          "M": 15,
+          "Y": 70,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "025"
+      }
+    },
+    {
+      "color_id": "002017",
+      "name": "库金",
+      "rgb": {
+        "R": 225,
+        "G": 138,
+        "B": 59
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 10,
+          "M": 55,
+          "Y": 80,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "017"
+      }
+    },
+    {
+      "color_id": "002018",
+      "name": "柘黄",
+      "rgb": {
+        "R": 198,
+        "G": 121,
+        "B": 21
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 25,
+          "M": 60,
+          "Y": 100,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "025"
+      }
+    },
+    {
+      "color_id": "002019",
+      "name": "莺儿",
+      "rgb": {
+        "R": 236,
+        "G": 223,
+        "B": 128
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 10,
+          "M": 10,
+          "Y": 58,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "201"
+      }
+    },
+    {
+      "color_id": "002020",
+      "name": "堇色",
+      "rgb": {
+        "R": 211,
+        "G": 170,
+        "B": 90
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 13,
+          "M": 32,
+          "Y": 67,
+          "K": 10
+        }
+      },
+      "source": {
+        "page": "155"
+      }
+    },
+    {
+      "color_id": "002021",
+      "name": "嫩鹅黄",
+      "rgb": {
+        "R": 242,
+        "G": 200,
+        "B": 103
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 5,
+          "M": 25,
+          "Y": 65,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "075"
+      }
+    },
+    {
+      "color_id": "002022",
+      "name": "藤黄",
+      "rgb": {
+        "R": 218,
+        "G": 146,
+        "B": 51
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 15,
+          "M": 50,
+          "Y": 85,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "151"
+      }
+    },
+    {
+      "color_id": "002023",
+      "name": "赭黄",
+      "rgb": {
+        "R": 188,
+        "G": 110,
+        "B": 55
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 65,
+          "Y": 85,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "151"
+      }
+    },
+    {
+      "color_id": "002024",
+      "name": "米色",
+      "rgb": {
+        "R": 235,
+        "G": 213,
+        "B": 108
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 10,
+          "M": 15,
+          "Y": 65,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "173"
+      }
+    },
+    {
+      "color_id": "002025",
+      "name": "芸黄",
+      "rgb": {
+        "R": 211,
+        "G": 167,
+        "B": 99
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 20,
+          "M": 38,
+          "Y": 65,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "081"
+      }
+    },
+    {
+      "color_id": "002026",
+      "name": "金漆",
+      "rgb": {
+        "R": 215,
+        "G": 165,
+        "B": 71
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 18,
+          "M": 39,
+          "Y": 78,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "081"
+      }
+    },
+    {
+      "color_id": "002027",
+      "name": "蛾黄",
+      "rgb": {
+        "R": 190,
+        "G": 138,
+        "B": 47
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 50,
+          "Y": 90,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "201"
+      }
+    },
+    {
+      "color_id": "002028",
+      "name": "蜜合",
+      "rgb": {
+        "R": 234,
+        "G": 216,
+        "B": 154
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 10,
+          "M": 15,
+          "Y": 45,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "131"
+      }
+    },
+    {
+      "color_id": "002029",
+      "name": "圆眼",
+      "rgb": {
+        "R": 222,
+        "G": 188,
+        "B": 121
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 15,
+          "M": 28,
+          "Y": 57,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "205"
+      }
+    },
+    {
+      "color_id": "002030",
+      "name": "秋叶",
+      "rgb": {
+        "R": 194,
+        "G": 165,
+        "B": 75
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 29,
+          "M": 35,
+          "Y": 78,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "191"
+      }
+    },
+    {
+      "color_id": "002031",
+      "name": "泥金",
+      "rgb": {
+        "R": 204,
+        "G": 157,
+        "B": 84
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 23,
+          "M": 42,
+          "Y": 72,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "063"
+      }
+    },
+    {
+      "color_id": "002032",
+      "name": "竹根黄",
+      "rgb": {
+        "R": 207,
+        "G": 141,
+        "B": 56
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 21,
+          "M": 51,
+          "Y": 84,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "063"
+      }
+    },
+    {
+      "color_id": "002033",
+      "name": "窃黄",
+      "rgb": {
+        "R": 227,
+        "G": 201,
+        "B": 136
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 10,
+          "M": 20,
+          "Y": 50,
+          "K": 5
+        }
+      },
+      "source": {
+        "page": "139"
+      }
+    },
+    {
+      "color_id": "002034",
+      "name": "姚黄",
+      "rgb": {
+        "R": 214,
+        "G": 188,
+        "B": 70
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 20,
+          "M": 25,
+          "Y": 80,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "201"
+      }
+    },
+    {
+      "color_id": "002035",
+      "name": "香色",
+      "rgb": {
+        "R": 191,
+        "G": 156,
+        "B": 70
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 40,
+          "Y": 80,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "131"
+      }
+    },
+    {
+      "color_id": "002036",
+      "name": "鞠衣",
+      "rgb": {
+        "R": 211,
+        "G": 162,
+        "B": 55
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 20,
+          "M": 40,
+          "Y": 85,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "075"
+      }
+    },
+    {
+      "color_id": "002037",
+      "name": "老银黄",
+      "rgb": {
+        "R": 170,
+        "G": 110,
+        "B": 35
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 40,
+          "M": 63,
+          "Y": 100,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "073"
+      }
+    },
+    {
+      "color_id": "002038",
+      "name": "田赤",
+      "rgb": {
+        "R": 225,
+        "G": 211,
+        "B": 132
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 15,
+          "M": 15,
+          "Y": 55,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "205"
+      }
+    },
+    {
+      "color_id": "002039",
+      "name": "银褐",
+      "rgb": {
+        "R": 213,
+        "G": 180,
+        "B": 92
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 20,
+          "M": 30,
+          "Y": 70,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "131"
+      }
+    },
+    {
+      "color_id": "002040",
+      "name": "苍黄",
+      "rgb": {
+        "R": 182,
+        "G": 160,
+        "B": 20
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 35,
+          "M": 35,
+          "Y": 100,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "005"
+      }
+    },
+    {
+      "color_id": "002041",
+      "name": "蒸栗",
+      "rgb": {
+        "R": 195,
+        "G": 151,
+        "B": 66
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 25,
+          "M": 42,
+          "Y": 80,
+          "K": 5
+        }
+      },
+      "source": {
+        "page": "139"
+      }
+    },
+    {
+      "color_id": "002042",
+      "name": "槐黄",
+      "rgb": {
+        "R": 225,
+        "G": 201,
+        "B": 95
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 15,
+          "M": 20,
+          "Y": 70,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "201"
+      }
+    },
+    {
+      "color_id": "002043",
+      "name": "糙米",
+      "rgb": {
+        "R": 219,
+        "G": 202,
+        "B": 153
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 17,
+          "M": 20,
+          "Y": 44,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "073"
+      }
+    },
+    {
+      "color_id": "002044",
+      "name": "黄栌",
+      "rgb": {
+        "R": 192,
+        "G": 173,
+        "B": 94
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 30,
+          "Y": 70,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "143"
+      }
+    },
+    {
+      "color_id": "002045",
+      "name": "大赤",
+      "rgb": {
+        "R": 170,
+        "G": 150,
+        "B": 73
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 40,
+          "M": 40,
+          "Y": 80,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "143"
+      }
+    },
+    {
+      "color_id": "002046",
+      "name": "密陀僧",
+      "rgb": {
+        "R": 192,
+        "G": 149,
+        "B": 52
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 13,
+          "M": 35,
+          "Y": 81,
+          "K": 22
+        }
+      },
+      "source": {
+        "page": "155"
+      }
+    },
+    {
+      "color_id": "002047",
+      "name": "断肠",
+      "rgb": {
+        "R": 236,
+        "G": 235,
+        "B": 194
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 10,
+          "M": 5,
+          "Y": 30,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "205"
+      }
+    },
+    {
+      "color_id": "002048",
+      "name": "姜黄",
+      "rgb": {
+        "R": 214,
+        "G": 197,
+        "B": 96
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 20,
+          "M": 20,
+          "Y": 70,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "173"
+      }
+    },
+    {
+      "color_id": "002049",
+      "name": "秋色",
+      "rgb": {
+        "R": 191,
+        "G": 166,
+        "B": 106
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 35,
+          "Y": 63,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "073"
+      }
+    },
+    {
+      "color_id": "002050",
+      "name": "秋香",
+      "rgb": {
+        "R": 170,
+        "G": 133,
+        "B": 52
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 40,
+          "M": 50,
+          "Y": 90,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "131"
+      }
+    },
+    {
+      "color_id": "002051",
+      "name": "流黄",
+      "rgb": {
+        "R": 139,
+        "G": 112,
+        "B": 66
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 50,
+          "M": 55,
+          "Y": 80,
+          "K": 10
+        }
+      },
+      "source": {
+        "page": "009"
+      }
+    },
+    {
+      "color_id": "002052",
+      "name": "明茶褐",
+      "rgb": {
+        "R": 158,
+        "G": 131,
+        "B": 104
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 45,
+          "M": 50,
+          "Y": 60,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "187"
+      }
+    },
+    {
+      "color_id": "002053",
+      "name": "秋茶褐",
+      "rgb": {
+        "R": 124,
+        "G": 98,
+        "B": 63
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 55,
+          "M": 60,
+          "Y": 80,
+          "K": 15
+        }
+      },
+      "source": {
+        "page": "139"
+      }
+    },
+    {
+      "color_id": "002054",
+      "name": "烟色",
+      "rgb": {
+        "R": 86,
+        "G": 66,
+        "B": 50
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 65,
+          "M": 70,
+          "Y": 80,
+          "K": 35
+        }
+      },
+      "source": {
+        "page": "051"
+      }
+    },
+    {
+      "color_id": "002055",
+      "name": "吉金",
+      "rgb": {
+        "R": 153,
+        "G": 112,
+        "B": 52
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 48,
+          "M": 60,
+          "Y": 92,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "105"
+      }
+    },
+    {
+      "color_id": "002056",
+      "name": "黄埃",
+      "rgb": {
+        "R": 180,
+        "G": 146,
+        "B": 115
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 35,
+          "M": 45,
+          "Y": 55,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "015"
+      }
+    },
+    {
+      "color_id": "002057",
+      "name": "枯瓤",
+      "rgb": {
+        "R": 158,
+        "G": 122,
+        "B": 87
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 43,
+          "M": 54,
+          "Y": 67,
+          "K": 5
+        }
+      },
+      "source": {
+        "page": "159"
+      }
+    },
+    {
+      "color_id": "002058",
+      "name": "驼褐",
+      "rgb": {
+        "R": 124,
+        "G": 91,
+        "B": 62
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 55,
+          "M": 65,
+          "Y": 80,
+          "K": 15
+        }
+      },
+      "source": {
+        "page": "187"
+      }
+    },
+    {
+      "color_id": "002059",
+      "name": "珠子褐",
+      "rgb": {
+        "R": 212,
+        "G": 166,
+        "B": 110
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 19,
+          "M": 39,
+          "Y": 59,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "217"
+      }
+    },
+    {
+      "color_id": "002060",
+      "name": "鳝鱼黄",
+      "rgb": {
+        "R": 148,
+        "G": 99,
+        "B": 35
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 46,
+          "M": 64,
+          "Y": 100,
+          "K": 10
+        }
+      },
+      "source": {
+        "page": "073"
+      }
+    },
+    {
+      "color_id": "002061",
+      "name": "弗肯红",
+      "rgb": {
+        "R": 236,
+        "G": 217,
+        "B": 199
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 5,
+          "M": 15,
+          "Y": 20,
+          "K": 5
+        }
+      },
+      "source": {
+        "page": "155"
+      }
+    },
+    {
+      "color_id": "002062",
+      "name": "沉香",
+      "rgb": {
+        "R": 144,
+        "G": 113,
+        "B": 79
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 42,
+          "M": 52,
+          "Y": 67,
+          "K": 19
+        }
+      },
+      "source": {
+        "page": "163"
+      }
+    },
+    {
+      "color_id": "002063",
+      "name": "麝香褐",
+      "rgb": {
+        "R": 105,
+        "G": 75,
+        "B": 60
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 60,
+          "M": 70,
+          "Y": 75,
+          "K": 25
+        }
+      },
+      "source": {
+        "page": "217"
+      }
+    },
+    {
+      "color_id": "002064",
+      "name": "血牙",
+      "rgb": {
+        "R": 233,
+        "G": 209,
+        "B": 181
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 10,
+          "M": 20,
+          "Y": 30,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "063"
+      }
+    },
+    {
+      "color_id": "002065",
+      "name": "枯黄",
+      "rgb": {
+        "R": 137,
+        "G": 93,
+        "B": 49
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 50,
+          "M": 66,
+          "Y": 90,
+          "K": 13
+        }
+      },
+      "source": {
+        "page": "051"
+      }
+    },
+    {
+      "color_id": "002066",
+      "name": "赤璋",
+      "rgb": {
+        "R": 225,
+        "G": 193,
+        "B": 153
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 10,
+          "M": 25,
+          "Y": 40,
+          "K": 5
+        }
+      },
+      "source": {
+        "page": "155"
+      }
+    },
+    {
+      "color_id": "002067",
+      "name": "鹰背褐",
+      "rgb": {
+        "R": 143,
+        "G": 109,
+        "B": 95
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 50,
+          "M": 60,
+          "Y": 60,
+          "K": 5
+        }
+      },
+      "source": {
+        "page": "217"
+      }
+    },
+    {
+      "color_id": "002068",
+      "name": "杏子绒",
+      "rgb": {
+        "R": 100,
+        "G": 77,
+        "B": 49
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 65,
+          "M": 70,
+          "Y": 90,
+          "K": 20
+        }
+      },
+      "source": {
+        "page": "139"
+      }
+    },
+    {
+      "color_id": "002069",
+      "name": "甘石",
+      "rgb": {
+        "R": 228,
+        "G": 202,
+        "B": 172
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 12,
+          "M": 23,
+          "Y": 33,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "063"
+      }
+    },
+    {
+      "color_id": "002070",
+      "name": "番皮",
+      "rgb": {
+        "R": 140,
+        "G": 77,
+        "B": 34
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 41,
+          "M": 72,
+          "Y": 94,
+          "K": 24
+        }
+      },
+      "source": {
+        "page": "219"
+      }
+    },
+    {
+      "color_id": "002071",
+      "name": "紫花布",
+      "rgb": {
+        "R": 190,
+        "G": 167,
+        "B": 139
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 35,
+          "Y": 45,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "163"
+      }
+    },
+    {
+      "color_id": "002072",
+      "name": "荆褐",
+      "rgb": {
+        "R": 144,
+        "G": 108,
+        "B": 74
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 50,
+          "M": 60,
+          "Y": 75,
+          "K": 5
+        }
+      },
+      "source": {
+        "page": "187"
+      }
+    },
+    {
+      "color_id": "002073",
+      "name": "古铜",
+      "rgb": {
+        "R": 96,
+        "G": 67,
+        "B": 34
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 60,
+          "M": 70,
+          "Y": 95,
+          "K": 35
+        }
+      },
+      "source": {
+        "page": "009"
+      }
+    },
+    {
+      "color_id": "002074",
+      "name": "露褐",
+      "rgb": {
+        "R": 189,
+        "G": 130,
+        "B": 83
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 55,
+          "Y": 70,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "051"
+      }
+    },
+    {
+      "color_id": "002075",
+      "name": "棠梨褐",
+      "rgb": {
+        "R": 149,
+        "G": 90,
+        "B": 66
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 45,
+          "M": 70,
+          "Y": 75,
+          "K": 10
+        }
+      },
+      "source": {
+        "page": "207"
+      }
+    },
+    {
+      "color_id": "002076",
+      "name": "烟红",
+      "rgb": {
+        "R": 129,
+        "G": 73,
+        "B": 44
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 50,
+          "M": 75,
+          "Y": 90,
+          "K": 20
+        }
+      },
+      "source": {
+        "page": "207"
+      }
+    },
+    {
+      "color_id": "002077",
+      "name": "枣褐",
+      "rgb": {
+        "R": 104,
+        "G": 54,
+        "B": 26
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 55,
+          "M": 80,
+          "Y": 100,
+          "K": 35
+        }
+      },
+      "source": {
+        "page": "207"
+      }
+    },
+    {
+      "color_id": "002078",
+      "name": "赪霞",
+      "rgb": {
+        "R": 241,
+        "G": 143,
+        "B": 96
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 0,
+          "M": 55,
+          "Y": 60,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "093"
+      }
+    },
+    {
+      "color_id": "002079",
+      "name": "黄丹",
+      "rgb": {
+        "R": 234,
+        "G": 85,
+        "B": 20
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 0,
+          "M": 80,
+          "Y": 95,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "033"
+      }
+    },
+    {
+      "color_id": "002080",
+      "name": "胭脂虫",
+      "rgb": {
+        "R": 171,
+        "G": 29,
+        "B": 34
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 35,
+          "M": 100,
+          "Y": 100,
+          "K": 5
+        }
+      },
+      "source": {
+        "page": "157"
+      }
+    },
+    {
+      "color_id": "002081",
+      "name": "紫瓯",
+      "rgb": {
+        "R": 124,
+        "G": 70,
+        "B": 30
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 50,
+          "M": 75,
+          "Y": 100,
+          "K": 25
+        }
+      },
+      "source": {
+        "page": "017"
+      }
+    },
+    {
+      "color_id": "002082",
+      "name": "丹罽",
+      "rgb": {
+        "R": 230,
+        "G": 0,
+        "B": 18
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 0,
+          "M": 100,
+          "Y": 100,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "067"
+      }
+    },
+    {
+      "color_id": "002083",
+      "name": "蜜红",
+      "rgb": {
+        "R": 239,
+        "G": 132,
+        "B": 93
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 0,
+          "M": 60,
+          "Y": 60,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "093"
+      }
+    },
+    {
+      "color_id": "002084",
+      "name": "檎丹",
+      "rgb": {
+        "R": 233,
+        "G": 72,
+        "B": 41
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 0,
+          "M": 85,
+          "Y": 85,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "067"
+      }
+    },
+    {
+      "color_id": "002085",
+      "name": "水华朱",
+      "rgb": {
+        "R": 167,
+        "G": 33,
+        "B": 38
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 40,
+          "M": 100,
+          "Y": 100,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "033"
+      }
+    },
+    {
+      "color_id": "002086",
+      "name": "栗壳",
+      "rgb": {
+        "R": 119,
+        "G": 80,
+        "B": 57
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 55,
+          "M": 70,
+          "Y": 80,
+          "K": 20
+        }
+      },
+      "source": {
+        "page": "009"
+      }
+    },
+    {
+      "color_id": "002087",
+      "name": "靠红",
+      "rgb": {
+        "R": 240,
+        "G": 194,
+        "B": 162
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 5,
+          "M": 30,
+          "Y": 35,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "089"
+      }
+    },
+    {
+      "color_id": "002088",
+      "name": "缙云",
+      "rgb": {
+        "R": 238,
+        "G": 121,
+        "B": 89
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 0,
+          "M": 65,
+          "Y": 60,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "011"
+      }
+    },
+    {
+      "color_id": "002089",
+      "name": "银朱",
+      "rgb": {
+        "R": 209,
+        "G": 41,
+        "B": 32
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 15,
+          "M": 95,
+          "Y": 95,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "157"
+      }
+    },
+    {
+      "color_id": "002090",
+      "name": "朱樱",
+      "rgb": {
+        "R": 143,
+        "G": 29,
+        "B": 34
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 45,
+          "M": 100,
+          "Y": 100,
+          "K": 15
+        }
+      },
+      "source": {
+        "page": "157"
+      }
+    },
+    {
+      "color_id": "002091",
+      "name": "緅絺",
+      "rgb": {
+        "R": 128,
+        "G": 76,
+        "B": 46
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 60,
+          "M": 80,
+          "Y": 100,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "051"
+      }
+    },
+    {
+      "color_id": "002092",
+      "name": "骍刚",
+      "rgb": {
+        "R": 245,
+        "G": 176,
+        "B": 135
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 0,
+          "M": 40,
+          "Y": 45,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "093"
+      }
+    },
+    {
+      "color_id": "002093",
+      "name": "朱柿",
+      "rgb": {
+        "R": 237,
+        "G": 109,
+        "B": 70
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 0,
+          "M": 70,
+          "Y": 70,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "093"
+      }
+    },
+    {
+      "color_id": "002094",
+      "name": "木红",
+      "rgb": {
+        "R": 200,
+        "G": 22,
+        "B": 29
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 20,
+          "M": 100,
+          "Y": 100,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "033"
+      }
+    },
+    {
+      "color_id": "002095",
+      "name": "顺圣",
+      "rgb": {
+        "R": 124,
+        "G": 25,
+        "B": 30
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 50,
+          "M": 100,
+          "Y": 100,
+          "K": 25
+        }
+      },
+      "source": {
+        "page": "021"
+      }
+    },
+    {
+      "color_id": "002096",
+      "name": "椒褐",
+      "rgb": {
+        "R": 114,
+        "G": 69,
+        "B": 58
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 55,
+          "M": 75,
+          "Y": 75,
+          "K": 25
+        }
+      },
+      "source": {
+        "page": "187"
+      }
+    },
+    {
+      "color_id": "002097",
+      "name": "朱颜酡",
+      "rgb": {
+        "R": 242,
+        "G": 154,
+        "B": 118
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 0,
+          "M": 50,
+          "Y": 50,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "067"
+      }
+    },
+    {
+      "color_id": "002098",
+      "name": "桂黄",
+      "rgb": {
+        "R": 237,
+        "G": 109,
+        "B": 61
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 0,
+          "M": 70,
+          "Y": 75,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "067"
+      }
+    },
+    {
+      "color_id": "002099",
+      "name": "牙红",
+      "rgb": {
+        "R": 176,
+        "G": 31,
+        "B": 36
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 35,
+          "M": 100,
+          "Y": 100,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "097"
+      }
+    },
+    {
+      "color_id": "002100",
+      "name": "爵头",
+      "rgb": {
+        "R": 99,
+        "G": 18,
+        "B": 22
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 55,
+          "M": 100,
+          "Y": 100,
+          "K": 40
+        }
+      },
+      "source": {
+        "page": "157"
+      }
+    },
+    {
+      "color_id": "002101",
+      "name": "丹雘",
+      "rgb": {
+        "R": 210,
+        "G": 57,
+        "B": 24
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 15,
+          "M": 90,
+          "Y": 100,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "033"
+      }
+    },
+    {
+      "color_id": "002102",
+      "name": "岱赭",
+      "rgb": {
+        "R": 221,
+        "G": 107,
+        "B": 79
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 10,
+          "M": 70,
+          "Y": 65,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "183"
+      }
+    },
+    {
+      "color_id": "002103",
+      "name": "鱼红",
+      "rgb": {
+        "R": 195,
+        "G": 74,
+        "B": 54
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 19,
+          "M": 82,
+          "Y": 78,
+          "K": 8
+        }
+      },
+      "source": {
+        "page": "197"
+      }
+    },
+    {
+      "color_id": "002104",
+      "name": "珊瑚赫",
+      "rgb": {
+        "R": 193,
+        "G": 44,
+        "B": 31
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 25,
+          "M": 95,
+          "Y": 100,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "011"
+      }
+    },
+    {
+      "color_id": "002105",
+      "name": "铁红",
+      "rgb": {
+        "R": 177,
+        "G": 90,
+        "B": 67
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 35,
+          "M": 75,
+          "Y": 75,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "161"
+      }
+    },
+    {
+      "color_id": "002106",
+      "name": "十样锦",
+      "rgb": {
+        "R": 248,
+        "G": 198,
+        "B": 181
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 0,
+          "M": 30,
+          "Y": 25,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "161"
+      }
+    },
+    {
+      "color_id": "002107",
+      "name": "赩炽",
+      "rgb": {
+        "R": 212,
+        "G": 87,
+        "B": 67
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 15,
+          "M": 78,
+          "Y": 71,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "085"
+      }
+    },
+    {
+      "color_id": "002108",
+      "name": "光明砂",
+      "rgb": {
+        "R": 198,
+        "G": 75,
+        "B": 42
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 23,
+          "M": 83,
+          "Y": 90,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "089"
+      }
+    },
+    {
+      "color_id": "002109",
+      "name": "朱草",
+      "rgb": {
+        "R": 166,
+        "G": 64,
+        "B": 54
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 35,
+          "M": 85,
+          "Y": 80,
+          "K": 10
+        }
+      },
+      "source": {
+        "page": "021"
+      }
+    },
+    {
+      "color_id": "002110",
+      "name": "肉红",
+      "rgb": {
+        "R": 221,
+        "G": 197,
+        "B": 184
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 15,
+          "M": 25,
+          "Y": 25,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "217"
+      }
+    },
+    {
+      "color_id": "002111",
+      "name": "海天霞",
+      "rgb": {
+        "R": 243,
+        "G": 166,
+        "B": 148
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 0,
+          "M": 45,
+          "Y": 35,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "011"
+      }
+    },
+    {
+      "color_id": "002112",
+      "name": "鹤顶红",
+      "rgb": {
+        "R": 210,
+        "G": 71,
+        "B": 53
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 15,
+          "M": 85,
+          "Y": 80,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "183"
+      }
+    },
+    {
+      "color_id": "002113",
+      "name": "石榴裙",
+      "rgb": {
+        "R": 192,
+        "G": 63,
+        "B": 46
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 26,
+          "M": 88,
+          "Y": 87,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "085"
+      }
+    },
+    {
+      "color_id": "002114",
+      "name": "不老红",
+      "rgb": {
+        "R": 164,
+        "G": 49,
+        "B": 48
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 39,
+          "M": 93,
+          "Y": 87,
+          "K": 5
+        }
+      },
+      "source": {
+        "page": "085"
+      }
+    },
+    {
+      "color_id": "002115",
+      "name": "藕丝",
+      "rgb": {
+        "R": 210,
+        "G": 175,
+        "B": 157
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 20,
+          "M": 35,
+          "Y": 35,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "031"
+      }
+    },
+    {
+      "color_id": "002116",
+      "name": "小红",
+      "rgb": {
+        "R": 230,
+        "G": 119,
+        "B": 98
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 5,
+          "M": 65,
+          "Y": 55,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "183"
+      }
+    },
+    {
+      "color_id": "002117",
+      "name": "赤缇",
+      "rgb": {
+        "R": 186,
+        "G": 91,
+        "B": 73
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 75,
+          "Y": 70,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "021"
+      }
+    },
+    {
+      "color_id": "002118",
+      "name": "朱殷",
+      "rgb": {
+        "R": 185,
+        "G": 58,
+        "B": 38
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 90,
+          "Y": 95,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "183"
+      }
+    },
+    {
+      "color_id": "002119",
+      "name": "綪茷",
+      "rgb": {
+        "R": 158,
+        "G": 42,
+        "B": 34
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 40,
+          "M": 95,
+          "Y": 100,
+          "K": 10
+        }
+      },
+      "source": {
+        "page": "021"
+      }
+    },
+    {
+      "color_id": "002120",
+      "name": "丁香褐",
+      "rgb": {
+        "R": 189,
+        "G": 150,
+        "B": 131
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 45,
+          "Y": 45,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "207"
+      }
+    },
+    {
+      "color_id": "002121",
+      "name": "土红",
+      "rgb": {
+        "R": 215,
+        "G": 127,
+        "B": 102
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 15,
+          "M": 60,
+          "Y": 55,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "161"
+      }
+    },
+    {
+      "color_id": "002122",
+      "name": "纁黄",
+      "rgb": {
+        "R": 186,
+        "G": 81,
+        "B": 64
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 80,
+          "Y": 75,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "011"
+      }
+    },
+    {
+      "color_id": "002123",
+      "name": "矾红",
+      "rgb": {
+        "R": 197,
+        "G": 55,
+        "B": 24
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 18,
+          "M": 90,
+          "Y": 100,
+          "K": 7
+        }
+      },
+      "source": {
+        "page": "097"
+      }
+    },
+    {
+      "color_id": "002124",
+      "name": "大繎",
+      "rgb": {
+        "R": 145,
+        "G": 37,
+        "B": 40
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 45,
+          "M": 97,
+          "Y": 93,
+          "K": 13
+        }
+      },
+      "source": {
+        "page": "085"
+      }
+    },
+    {
+      "color_id": "002125",
+      "name": "紫磨金",
+      "rgb": {
+        "R": 188,
+        "G": 131,
+        "B": 107
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 55,
+          "Y": 55,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "031"
+      }
+    },
+    {
+      "color_id": "002126",
+      "name": "檀色",
+      "rgb": {
+        "R": 178,
+        "G": 109,
+        "B": 93
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 35,
+          "M": 65,
+          "Y": 60,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "031"
+      }
+    },
+    {
+      "color_id": "002127",
+      "name": "烟里火",
+      "rgb": {
+        "R": 120,
+        "G": 43,
+        "B": 27
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 45,
+          "M": 88,
+          "Y": 95,
+          "K": 35
+        }
+      },
+      "source": {
+        "page": "151"
+      }
+    },
+    {
+      "color_id": "002128",
+      "name": "窃丹",
+      "rgb": {
+        "R": 218,
+        "G": 158,
+        "B": 140
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 15,
+          "M": 45,
+          "Y": 40,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "161"
+      }
+    },
+    {
+      "color_id": "002129",
+      "name": "紫矿",
+      "rgb": {
+        "R": 158,
+        "G": 78,
+        "B": 86
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 45,
+          "M": 80,
+          "Y": 60,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "197"
+      }
+    },
+    {
+      "color_id": "002130",
+      "name": "福色",
+      "rgb": {
+        "R": 102,
+        "G": 43,
+        "B": 47
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 60,
+          "M": 90,
+          "Y": 80,
+          "K": 30
+        }
+      },
+      "source": {
+        "page": "179"
+      }
+    },
+    {
+      "color_id": "002131",
+      "name": "赭罗",
+      "rgb": {
+        "R": 154,
+        "G": 102,
+        "B": 85
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 45,
+          "M": 65,
+          "Y": 65,
+          "K": 5
+        }
+      },
+      "source": {
+        "page": "031"
+      }
+    },
+    {
+      "color_id": "002132",
+      "name": "木兰",
+      "rgb": {
+        "R": 107,
+        "G": 38,
+        "B": 30
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 57,
+          "M": 93,
+          "Y": 100,
+          "K": 30
+        }
+      },
+      "source": {
+        "page": "097"
+      }
+    },
+    {
+      "color_id": "002133",
+      "name": "红蘽",
+      "rgb": {
+        "R": 205,
+        "G": 115,
+        "B": 114
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 20,
+          "M": 65,
+          "Y": 45,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "199"
+      }
+    },
+    {
+      "color_id": "002134",
+      "name": "苏方",
+      "rgb": {
+        "R": 129,
+        "G": 71,
+        "B": 76
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 55,
+          "M": 80,
+          "Y": 65,
+          "K": 10
+        }
+      },
+      "source": {
+        "page": "179"
+      }
+    },
+    {
+      "color_id": "002135",
+      "name": "真紫",
+      "rgb": {
+        "R": 101,
+        "G": 41,
+        "B": 64
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 60,
+          "M": 90,
+          "Y": 60,
+          "K": 30
+        }
+      },
+      "source": {
+        "page": "213"
+      }
+    },
+    {
+      "color_id": "002136",
+      "name": "老僧衣",
+      "rgb": {
+        "R": 164,
+        "G": 95,
+        "B": 68
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 40,
+          "M": 70,
+          "Y": 75,
+          "K": 5
+        }
+      },
+      "source": {
+        "page": "015"
+      }
+    },
+    {
+      "color_id": "002137",
+      "name": "麒麟竭",
+      "rgb": {
+        "R": 77,
+        "G": 22,
+        "B": 26
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 70,
+          "M": 100,
+          "Y": 100,
+          "K": 40
+        }
+      },
+      "source": {
+        "page": "097"
+      }
+    },
+    {
+      "color_id": "002138",
+      "name": "牙绯",
+      "rgb": {
+        "R": 195,
+        "G": 92,
+        "B": 93
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 25,
+          "M": 75,
+          "Y": 55,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "023"
+      }
+    },
+    {
+      "color_id": "002139",
+      "name": "祭红",
+      "rgb": {
+        "R": 125,
+        "G": 57,
+        "B": 56
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 55,
+          "M": 87,
+          "Y": 79,
+          "K": 15
+        }
+      },
+      "source": {
+        "page": "199"
+      }
+    },
+    {
+      "color_id": "002140",
+      "name": "黪紫",
+      "rgb": {
+        "R": 83,
+        "G": 27,
+        "B": 52
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 65,
+          "M": 95,
+          "Y": 65,
+          "K": 40
+        }
+      },
+      "source": {
+        "page": "213"
+      }
+    },
+    {
+      "color_id": "002141",
+      "name": "缊韍",
+      "rgb": {
+        "R": 152,
+        "G": 79,
+        "B": 49
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 40,
+          "M": 75,
+          "Y": 85,
+          "K": 15
+        }
+      },
+      "source": {
+        "page": "017"
+      }
+    },
+    {
+      "color_id": "002142",
+      "name": "檀褐",
+      "rgb": {
+        "R": 67,
+        "G": 25,
+        "B": 25
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 65,
+          "M": 90,
+          "Y": 85,
+          "K": 55
+        }
+      },
+      "source": {
+        "page": "009"
+      }
+    },
+    {
+      "color_id": "002143",
+      "name": "葡萄褐",
+      "rgb": {
+        "R": 158,
+        "G": 105,
+        "B": 109
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 45,
+          "M": 65,
+          "Y": 50,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "179"
+      }
+    },
+    {
+      "color_id": "002144",
+      "name": "火漆",
+      "rgb": {
+        "R": 119,
+        "G": 44,
+        "B": 56
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 51,
+          "M": 90,
+          "Y": 70,
+          "K": 27
+        }
+      },
+      "source": {
+        "page": "213"
+      }
+    },
+    {
+      "color_id": "002145",
+      "name": "油紫",
+      "rgb": {
+        "R": 55,
+        "G": 1,
+        "B": 38
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 70,
+          "M": 100,
+          "Y": 60,
+          "K": 60
+        }
+      },
+      "source": {
+        "page": "213"
+      }
+    },
+    {
+      "color_id": "002146",
+      "name": "佛赤",
+      "rgb": {
+        "R": 143,
+        "G": 61,
+        "B": 44
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 45,
+          "M": 85,
+          "Y": 90,
+          "K": 15
+        }
+      },
+      "source": {
+        "page": "143"
+      }
+    },
+    {
+      "color_id": "002147",
+      "name": "真红",
+      "rgb": {
+        "R": 166,
+        "G": 68,
+        "B": 68
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 35,
+          "M": 83,
+          "Y": 68,
+          "K": 10
+        }
+      },
+      "source": {
+        "page": "199"
+      }
+    },
+    {
+      "color_id": "002148",
+      "name": "豇豆红",
+      "rgb": {
+        "R": 179,
+        "G": 90,
+        "B": 87
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 34,
+          "M": 75,
+          "Y": 60,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "199"
+      }
+    },
+    {
+      "color_id": "002149",
+      "name": "蜜褐",
+      "rgb": {
+        "R": 104,
+        "G": 54,
+        "B": 50
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 55,
+          "M": 80,
+          "Y": 75,
+          "K": 35
+        }
+      },
+      "source": {
+        "page": "143"
+      }
+    },
+    {
+      "color_id": "002150",
+      "name": "美人祭",
+      "rgb": {
+        "R": 195,
+        "G": 92,
+        "B": 106
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 25,
+          "M": 75,
+          "Y": 45,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "189"
+      }
+    },
+    {
+      "color_id": "002151",
+      "name": "银红",
+      "rgb": {
+        "R": 231,
+        "G": 202,
+        "B": 211
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 10,
+          "M": 25,
+          "Y": 10,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "197"
+      }
+    },
+    {
+      "color_id": "002152",
+      "name": "渥赭",
+      "rgb": {
+        "R": 221,
+        "G": 107,
+        "B": 123
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 10,
+          "M": 70,
+          "Y": 35,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "069"
+      }
+    },
+    {
+      "color_id": "002153",
+      "name": "双红",
+      "rgb": {
+        "R": 192,
+        "G": 42,
+        "B": 69
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 25,
+          "M": 95,
+          "Y": 65,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "219"
+      }
+    },
+    {
+      "color_id": "002154",
+      "name": "杨妃",
+      "rgb": {
+        "R": 240,
+        "G": 145,
+        "B": 160
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 0,
+          "M": 55,
+          "Y": 20,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "023"
+      }
+    },
+    {
+      "color_id": "002155",
+      "name": "红踯躅",
+      "rgb": {
+        "R": 184,
+        "G": 53,
+        "B": 112
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 90,
+          "Y": 30,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "043"
+      }
+    },
+    {
+      "color_id": "002156",
+      "name": "西瓜水",
+      "rgb": {
+        "R": 239,
+        "G": 196,
+        "B": 206
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 5,
+          "M": 30,
+          "Y": 10,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "189"
+      }
+    },
+    {
+      "color_id": "002157",
+      "name": "彤云",
+      "rgb": {
+        "R": 194,
+        "G": 81,
+        "B": 96
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 25,
+          "M": 80,
+          "Y": 50,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "069"
+      }
+    },
+    {
+      "color_id": "002158",
+      "name": "朱孔阳",
+      "rgb": {
+        "R": 184,
+        "G": 26,
+        "B": 53
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 100,
+          "Y": 80,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "069"
+      }
+    },
+    {
+      "color_id": "002159",
+      "name": "菡萏",
+      "rgb": {
+        "R": 225,
+        "G": 137,
+        "B": 158
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 9,
+          "M": 57,
+          "Y": 20,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "101"
+      }
+    },
+    {
+      "color_id": "002160",
+      "name": "魏红",
+      "rgb": {
+        "R": 167,
+        "G": 55,
+        "B": 102
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 40,
+          "M": 90,
+          "Y": 40,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "043"
+      }
+    },
+    {
+      "color_id": "002161",
+      "name": "玉红",
+      "rgb": {
+        "R": 226,
+        "G": 162,
+        "B": 172
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 10,
+          "M": 45,
+          "Y": 20,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "069"
+      }
+    },
+    {
+      "color_id": "002162",
+      "name": "绛纱",
+      "rgb": {
+        "R": 181,
+        "G": 96,
+        "B": 105
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 33,
+          "M": 72,
+          "Y": 48,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "101"
+      }
+    },
+    {
+      "color_id": "002163",
+      "name": "苏梅",
+      "rgb": {
+        "R": 221,
+        "G": 118,
+        "B": 148
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 10,
+          "M": 65,
+          "Y": 20,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "013"
+      }
+    },
+    {
+      "color_id": "002164",
+      "name": "长春",
+      "rgb": {
+        "R": 220,
+        "G": 107,
+        "B": 130
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 10,
+          "M": 70,
+          "Y": 30,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "023"
+      }
+    },
+    {
+      "color_id": "002165",
+      "name": "玫瑰紫",
+      "rgb": {
+        "R": 152,
+        "G": 70,
+        "B": 99
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 40,
+          "M": 80,
+          "Y": 41,
+          "K": 14
+        }
+      },
+      "source": {
+        "page": "219"
+      }
+    },
+    {
+      "color_id": "002166",
+      "name": "莲红",
+      "rgb": {
+        "R": 217,
+        "G": 160,
+        "B": 179
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 15,
+          "M": 45,
+          "Y": 15,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "197"
+      }
+    },
+    {
+      "color_id": "002167",
+      "name": "茹蕙",
+      "rgb": {
+        "R": 167,
+        "G": 71,
+        "B": 89
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 39,
+          "M": 83,
+          "Y": 54,
+          "K": 3
+        }
+      },
+      "source": {
+        "page": "101"
+      }
+    },
+    {
+      "color_id": "002168",
+      "name": "桃夭",
+      "rgb": {
+        "R": 246,
+        "G": 190,
+        "B": 200
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 0,
+          "M": 35,
+          "Y": 10,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "023"
+      }
+    },
+    {
+      "color_id": "002169",
+      "name": "嫣红",
+      "rgb": {
+        "R": 208,
+        "G": 113,
+        "B": 137
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 18,
+          "M": 66,
+          "Y": 28,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "101"
+      }
+    },
+    {
+      "color_id": "002170",
+      "name": "魏紫",
+      "rgb": {
+        "R": 144,
+        "G": 55,
+        "B": 84
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 50,
+          "M": 90,
+          "Y": 55,
+          "K": 5
+        }
+      },
+      "source": {
+        "page": "043"
+      }
+    },
+    {
+      "color_id": "002171",
+      "name": "縓缘",
+      "rgb": {
+        "R": 206,
+        "G": 136,
+        "B": 146
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 20,
+          "M": 55,
+          "Y": 30,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "189"
+      }
+    },
+    {
+      "color_id": "002172",
+      "name": "鞓红",
+      "rgb": {
+        "R": 176,
+        "G": 69,
+        "B": 82
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 35,
+          "M": 85,
+          "Y": 60,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "189"
+      }
+    },
+    {
+      "color_id": "002173",
+      "name": "水红",
+      "rgb": {
+        "R": 236,
+        "G": 176,
+        "B": 193
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 5,
+          "M": 40,
+          "Y": 10,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "013"
+      }
+    },
+    {
+      "color_id": "002174",
+      "name": "琅玕紫",
+      "rgb": {
+        "R": 203,
+        "G": 92,
+        "B": 131
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 20,
+          "M": 75,
+          "Y": 25,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "043"
+      }
+    },
+    {
+      "color_id": "002175",
+      "name": "堇紫",
+      "rgb": {
+        "R": 131,
+        "G": 60,
+        "B": 102
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 58,
+          "M": 88,
+          "Y": 43,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "037"
+      }
+    },
+    {
+      "color_id": "002176",
+      "name": "汉紫",
+      "rgb": {
+        "R": 90,
+        "G": 56,
+        "B": 92
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 73,
+          "M": 86,
+          "Y": 46,
+          "K": 14
+        }
+      },
+      "source": {
+        "page": "219"
+      }
+    },
+    {
+      "color_id": "002177",
+      "name": "丁香",
+      "rgb": {
+        "R": 206,
+        "G": 147,
+        "B": 191
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 20,
+          "M": 50,
+          "Y": 0,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "125"
+      }
+    },
+    {
+      "color_id": "002178",
+      "name": "紫粉",
+      "rgb": {
+        "R": 177,
+        "G": 48,
+        "B": 85
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 34,
+          "M": 93,
+          "Y": 53,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "181"
+      }
+    },
+    {
+      "color_id": "002179",
+      "name": "雪青",
+      "rgb": {
+        "R": 119,
+        "G": 90,
+        "B": 148
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 62,
+          "M": 70,
+          "Y": 15,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "041"
+      }
+    },
+    {
+      "color_id": "002180",
+      "name": "齐紫",
+      "rgb": {
+        "R": 108,
+        "G": 33,
+        "B": 109
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 70,
+          "M": 100,
+          "Y": 30,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "037"
+      }
+    },
+    {
+      "color_id": "002181",
+      "name": "木槿",
+      "rgb": {
+        "R": 186,
+        "G": 121,
+        "B": 177
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 60,
+          "Y": 0,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "125"
+      }
+    },
+    {
+      "color_id": "002182",
+      "name": "棉胭脂",
+      "rgb": {
+        "R": 204,
+        "G": 115,
+        "B": 160
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 20,
+          "M": 65,
+          "Y": 10,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "181"
+      }
+    },
+    {
+      "color_id": "002183",
+      "name": "莲青",
+      "rgb": {
+        "R": 123,
+        "G": 90,
+        "B": 163
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 60,
+          "M": 70,
+          "Y": 0,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "195"
+      }
+    },
+    {
+      "color_id": "002184",
+      "name": "紫绒",
+      "rgb": {
+        "R": 125,
+        "G": 82,
+        "B": 132
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 60,
+          "M": 75,
+          "Y": 25,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "045"
+      }
+    },
+    {
+      "color_id": "002185",
+      "name": "凝夜紫",
+      "rgb": {
+        "R": 66,
+        "G": 34,
+        "B": 86
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 85,
+          "M": 100,
+          "Y": 45,
+          "K": 15
+        }
+      },
+      "source": {
+        "page": "037"
+      }
+    },
+    {
+      "color_id": "002186",
+      "name": "盈盈",
+      "rgb": {
+        "R": 249,
+        "G": 211,
+        "B": 227
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 0,
+          "M": 25,
+          "Y": 0,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "013"
+      }
+    },
+    {
+      "color_id": "002187",
+      "name": "胭脂水",
+      "rgb": {
+        "R": 185,
+        "G": 90,
+        "B": 137
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 75,
+          "Y": 20,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "181"
+      }
+    },
+    {
+      "color_id": "002188",
+      "name": "粉紫",
+      "rgb": {
+        "R": 220,
+        "G": 119,
+        "B": 225
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 15,
+          "M": 25,
+          "Y": 0,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "045"
+      }
+    },
+    {
+      "color_id": "002189",
+      "name": "越紫",
+      "rgb": {
+        "R": 138,
+        "G": 24,
+        "B": 116
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 55,
+          "M": 100,
+          "Y": 20,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "037"
+      }
+    },
+    {
+      "color_id": "002190",
+      "name": "紫苑",
+      "rgb": {
+        "R": 117,
+        "G": 124,
+        "B": 187
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 60,
+          "M": 50,
+          "Y": 0,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "195"
+      }
+    },
+    {
+      "color_id": "002191",
+      "name": "退红",
+      "rgb": {
+        "R": 240,
+        "G": 207,
+        "B": 227
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 5,
+          "M": 25,
+          "Y": 0,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "125"
+      }
+    },
+    {
+      "color_id": "002192",
+      "name": "并紫",
+      "rgb": {
+        "R": 167,
+        "G": 98,
+        "B": 131
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 40,
+          "M": 70,
+          "Y": 30,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "013"
+      }
+    },
+    {
+      "color_id": "002193",
+      "name": "茄花",
+      "rgb": {
+        "R": 187,
+        "G": 161,
+        "B": 203
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 40,
+          "Y": 0,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "045"
+      }
+    },
+    {
+      "color_id": "002194",
+      "name": "茄紫",
+      "rgb": {
+        "R": 126,
+        "G": 73,
+        "B": 131
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 60,
+          "M": 80,
+          "Y": 22,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "195"
+      }
+    },
+    {
+      "color_id": "002195",
+      "name": "暮山紫",
+      "rgb": {
+        "R": 132,
+        "G": 128,
+        "B": 174
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 46,
+          "M": 42,
+          "Y": 0,
+          "K": 19
+        }
+      },
+      "source": {
+        "page": "195"
+      }
+    },
+    {
+      "color_id": "002196",
+      "name": "樱花",
+      "rgb": {
+        "R": 228,
+        "G": 184,
+        "B": 213
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 10,
+          "M": 35,
+          "Y": 0,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "125"
+      }
+    },
+    {
+      "color_id": "002197",
+      "name": "胭脂红",
+      "rgb": {
+        "R": 176,
+        "G": 67,
+        "B": 111
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 35,
+          "M": 85,
+          "Y": 35,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "181"
+      }
+    },
+    {
+      "color_id": "002198",
+      "name": "茈萁",
+      "rgb": {
+        "R": 166,
+        "G": 126,
+        "B": 183
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 40,
+          "M": 55,
+          "Y": 0,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "045"
+      }
+    },
+    {
+      "color_id": "002199",
+      "name": "三公子",
+      "rgb": {
+        "R": 102,
+        "G": 61,
+        "B": 116
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 70,
+          "M": 85,
+          "Y": 30,
+          "K": 5
+        }
+      },
+      "source": {
+        "page": "041"
+      }
+    },
+    {
+      "color_id": "002200",
+      "name": "群青",
+      "rgb": {
+        "R": 46,
+        "G": 89,
+        "B": 167
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 85,
+          "M": 65,
+          "Y": 0,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "117"
+      }
+    },
+    {
+      "color_id": "002201",
+      "name": "月白",
+      "rgb": {
+        "R": 212,
+        "G": 229,
+        "B": 239
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 20,
+          "M": 5,
+          "Y": 5,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "185"
+      }
+    },
+    {
+      "color_id": "002202",
+      "name": "品月",
+      "rgb": {
+        "R": 138,
+        "G": 171,
+        "B": 204
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 50,
+          "M": 25,
+          "Y": 10,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "185"
+      }
+    },
+    {
+      "color_id": "002203",
+      "name": "景泰蓝",
+      "rgb": {
+        "R": 89,
+        "G": 118,
+        "B": 186
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 70,
+          "M": 50,
+          "Y": 0,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "117"
+      }
+    },
+    {
+      "color_id": "002204",
+      "name": "佛头青",
+      "rgb": {
+        "R": 25,
+        "G": 50,
+        "B": 95
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 100,
+          "M": 95,
+          "Y": 50,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "153"
+      }
+    },
+    {
+      "color_id": "002205",
+      "name": "卵色",
+      "rgb": {
+        "R": 200,
+        "G": 216,
+        "B": 224
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 25,
+          "M": 10,
+          "Y": 10,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "141"
+      }
+    },
+    {
+      "color_id": "002206",
+      "name": "天青",
+      "rgb": {
+        "R": 188,
+        "G": 212,
+        "B": 231
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 10,
+          "Y": 5,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "185"
+      }
+    },
+    {
+      "color_id": "002207",
+      "name": "东方既白",
+      "rgb": {
+        "R": 139,
+        "G": 163,
+        "B": 199
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 50,
+          "M": 30,
+          "Y": 10,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "153"
+      }
+    },
+    {
+      "color_id": "002208",
+      "name": "品蓝",
+      "rgb": {
+        "R": 0,
+        "G": 61,
+        "B": 116
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 100,
+          "M": 85,
+          "Y": 35,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "099"
+      }
+    },
+    {
+      "color_id": "002209",
+      "name": "螺青",
+      "rgb": {
+        "R": 22,
+        "G": 48,
+        "B": 75
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 95,
+          "M": 85,
+          "Y": 55,
+          "K": 30
+        }
+      },
+      "source": {
+        "page": "035"
+      }
+    },
+    {
+      "color_id": "002210",
+      "name": "影青",
+      "rgb": {
+        "R": 189,
+        "G": 203,
+        "B": 210
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 15,
+          "Y": 15,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "147"
+      }
+    },
+    {
+      "color_id": "002211",
+      "name": "碧落",
+      "rgb": {
+        "R": 174,
+        "G": 208,
+        "B": 238
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 35,
+          "M": 10,
+          "Y": 0,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "049"
+      }
+    },
+    {
+      "color_id": "002212",
+      "name": "窃蓝",
+      "rgb": {
+        "R": 136,
+        "G": 171,
+        "B": 218
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 50,
+          "M": 25,
+          "Y": 0,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "117"
+      }
+    },
+    {
+      "color_id": "002213",
+      "name": "宝蓝",
+      "rgb": {
+        "R": 0,
+        "G": 56,
+        "B": 114
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 100,
+          "M": 85,
+          "Y": 30,
+          "K": 10
+        }
+      },
+      "source": {
+        "page": "099"
+      }
+    },
+    {
+      "color_id": "002214",
+      "name": "花青",
+      "rgb": {
+        "R": 26,
+        "G": 40,
+        "B": 71
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 100,
+          "M": 100,
+          "Y": 65,
+          "K": 15
+        }
+      },
+      "source": {
+        "page": "153"
+      }
+    },
+    {
+      "color_id": "002215",
+      "name": "鱼肚白",
+      "rgb": {
+        "R": 178,
+        "G": 191,
+        "B": 195
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 35,
+          "M": 20,
+          "Y": 20,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "147"
+      }
+    },
+    {
+      "color_id": "002216",
+      "name": "天蓝",
+      "rgb": {
+        "R": 163,
+        "G": 187,
+        "B": 219
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 40,
+          "M": 20,
+          "Y": 5,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "185"
+      }
+    },
+    {
+      "color_id": "002217",
+      "name": "挼蓝",
+      "rgb": {
+        "R": 110,
+        "G": 155,
+        "B": 197
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 60,
+          "M": 30,
+          "Y": 10,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "049"
+      }
+    },
+    {
+      "color_id": "002218",
+      "name": "藏蓝",
+      "rgb": {
+        "R": 5,
+        "G": 52,
+        "B": 99
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 100,
+          "M": 87,
+          "Y": 40,
+          "K": 15
+        }
+      },
+      "source": {
+        "page": "153"
+      }
+    },
+    {
+      "color_id": "002219",
+      "name": "蓝青",
+      "rgb": {
+        "R": 65,
+        "G": 130,
+        "B": 164
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 75,
+          "M": 40,
+          "Y": 25,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "145"
+      }
+    },
+    {
+      "color_id": "002220",
+      "name": "白青",
+      "rgb": {
+        "R": 152,
+        "G": 182,
+        "B": 194
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 45,
+          "M": 20,
+          "Y": 20,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "119"
+      }
+    },
+    {
+      "color_id": "002221",
+      "name": "月蓝",
+      "rgb": {
+        "R": 143,
+        "G": 174,
+        "B": 207
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 48,
+          "M": 24,
+          "Y": 9,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "141"
+      }
+    },
+    {
+      "color_id": "002222",
+      "name": "苍苍",
+      "rgb": {
+        "R": 111,
+        "G": 148,
+        "B": 205
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 60,
+          "M": 35,
+          "Y": 0,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "117"
+      }
+    },
+    {
+      "color_id": "002223",
+      "name": "帝释青",
+      "rgb": {
+        "R": 0,
+        "G": 52,
+        "B": 96
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 100,
+          "M": 85,
+          "Y": 40,
+          "K": 20
+        }
+      },
+      "source": {
+        "page": "099"
+      }
+    },
+    {
+      "color_id": "002224",
+      "name": "荻色",
+      "rgb": {
+        "R": 212,
+        "G": 221,
+        "B": 225
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 20,
+          "M": 10,
+          "Y": 10,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "147"
+      }
+    },
+    {
+      "color_id": "002225",
+      "name": "虾青",
+      "rgb": {
+        "R": 148,
+        "G": 169,
+        "B": 184
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 45,
+          "M": 25,
+          "Y": 20,
+          "K": 5
+        }
+      },
+      "source": {
+        "page": "027"
+      }
+    },
+    {
+      "color_id": "002226",
+      "name": "灰蓝",
+      "rgb": {
+        "R": 127,
+        "G": 159,
+        "B": 175
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 55,
+          "M": 30,
+          "Y": 25,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "119"
+      }
+    },
+    {
+      "color_id": "002227",
+      "name": "育阳染",
+      "rgb": {
+        "R": 87,
+        "G": 100,
+        "B": 112
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 70,
+          "M": 55,
+          "Y": 45,
+          "K": 15
+        }
+      },
+      "source": {
+        "page": "209"
+      }
+    },
+    {
+      "color_id": "002228",
+      "name": "柔蓝",
+      "rgb": {
+        "R": 16,
+        "G": 104,
+        "B": 152
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 85,
+          "M": 50,
+          "Y": 20,
+          "K": 10
+        }
+      },
+      "source": {
+        "page": "099"
+      }
+    },
+    {
+      "color_id": "002229",
+      "name": "扁青",
+      "rgb": {
+        "R": 80,
+        "G": 146,
+        "B": 150
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 70,
+          "M": 30,
+          "Y": 40,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "211"
+      }
+    },
+    {
+      "color_id": "002230",
+      "name": "湖色",
+      "rgb": {
+        "R": 136,
+        "G": 191,
+        "B": 184
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 50,
+          "M": 10,
+          "Y": 30,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "175"
+      }
+    },
+    {
+      "color_id": "002231",
+      "name": "秋蓝",
+      "rgb": {
+        "R": 125,
+        "G": 146,
+        "B": 159
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 55,
+          "M": 35,
+          "Y": 30,
+          "K": 5
+        }
+      },
+      "source": {
+        "page": "209"
+      }
+    },
+    {
+      "color_id": "002232",
+      "name": "青雀头黛",
+      "rgb": {
+        "R": 53,
+        "G": 78,
+        "B": 107
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 85,
+          "M": 70,
+          "Y": 45,
+          "K": 10
+        }
+      },
+      "source": {
+        "page": "049"
+      }
+    },
+    {
+      "color_id": "002233",
+      "name": "松石",
+      "rgb": {
+        "R": 117,
+        "G": 193,
+        "B": 196
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 55,
+          "M": 5,
+          "Y": 25,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "129"
+      }
+    },
+    {
+      "color_id": "002234",
+      "name": "吉翠",
+      "rgb": {
+        "R": 16,
+        "G": 139,
+        "B": 150
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 80,
+          "M": 30,
+          "Y": 40,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "129"
+      }
+    },
+    {
+      "color_id": "002235",
+      "name": "天缥",
+      "rgb": {
+        "R": 213,
+        "G": 235,
+        "B": 225
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 20,
+          "M": 0,
+          "Y": 15,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "007"
+      }
+    },
+    {
+      "color_id": "002236",
+      "name": "空青",
+      "rgb": {
+        "R": 102,
+        "G": 136,
+        "B": 158
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 65,
+          "M": 40,
+          "Y": 30,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "119"
+      }
+    },
+    {
+      "color_id": "002237",
+      "name": "青緺",
+      "rgb": {
+        "R": 40,
+        "G": 72,
+        "B": 82
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 90,
+          "M": 75,
+          "Y": 65,
+          "K": 10
+        }
+      },
+      "source": {
+        "page": "035"
+      }
+    },
+    {
+      "color_id": "002238",
+      "name": "西子",
+      "rgb": {
+        "R": 162,
+        "G": 210,
+        "B": 226
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 40,
+          "M": 5,
+          "Y": 10,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "129"
+      }
+    },
+    {
+      "color_id": "002239",
+      "name": "翠蓝",
+      "rgb": {
+        "R": 50,
+        "G": 120,
+        "B": 138
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 80,
+          "M": 45,
+          "Y": 40,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "145"
+      }
+    },
+    {
+      "color_id": "002240",
+      "name": "沧浪",
+      "rgb": {
+        "R": 177,
+        "G": 213,
+        "B": 200
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 35,
+          "M": 5,
+          "Y": 25,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "007"
+      }
+    },
+    {
+      "color_id": "002241",
+      "name": "菘蓝",
+      "rgb": {
+        "R": 107,
+        "G": 121,
+        "B": 142
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 65,
+          "M": 50,
+          "Y": 35,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "027"
+      }
+    },
+    {
+      "color_id": "002242",
+      "name": "孔雀蓝",
+      "rgb": {
+        "R": 73,
+        "G": 148,
+        "B": 196
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 70,
+          "M": 30,
+          "Y": 10,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "145"
+      }
+    },
+    {
+      "color_id": "002243",
+      "name": "正青",
+      "rgb": {
+        "R": 108,
+        "G": 168,
+        "B": 175
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 60,
+          "M": 20,
+          "Y": 30,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "211"
+      }
+    },
+    {
+      "color_id": "002244",
+      "name": "青雘",
+      "rgb": {
+        "R": 0,
+        "G": 113,
+        "B": 117
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 95,
+          "M": 45,
+          "Y": 55,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "035"
+      }
+    },
+    {
+      "color_id": "002245",
+      "name": "蓝绿",
+      "rgb": {
+        "R": 93,
+        "G": 163,
+        "B": 157
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 65,
+          "M": 20,
+          "Y": 40,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "175"
+      }
+    },
+    {
+      "color_id": "002246",
+      "name": "太师青",
+      "rgb": {
+        "R": 84,
+        "G": 118,
+        "B": 137
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 70,
+          "M": 45,
+          "Y": 35,
+          "K": 10
+        }
+      },
+      "source": {
+        "page": "119"
+      }
+    },
+    {
+      "color_id": "002247",
+      "name": "蔚蓝",
+      "rgb": {
+        "R": 40,
+        "G": 116,
+        "B": 175
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 81,
+          "M": 48,
+          "Y": 11,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "035"
+      }
+    },
+    {
+      "color_id": "002248",
+      "name": "天水碧",
+      "rgb": {
+        "R": 90,
+        "G": 164,
+        "B": 174
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 65,
+          "M": 20,
+          "Y": 30,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "129"
+      }
+    },
+    {
+      "color_id": "002249",
+      "name": "软翠",
+      "rgb": {
+        "R": 0,
+        "G": 109,
+        "B": 135
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 90,
+          "M": 50,
+          "Y": 40,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "145"
+      }
+    },
+    {
+      "color_id": "002250",
+      "name": "铜青",
+      "rgb": {
+        "R": 61,
+        "G": 142,
+        "B": 134
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 75,
+          "M": 30,
+          "Y": 50,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "175"
+      }
+    },
+    {
+      "color_id": "002251",
+      "name": "石绿",
+      "rgb": {
+        "R": 32,
+        "G": 104,
+        "B": 100
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 85,
+          "M": 50,
+          "Y": 60,
+          "K": 10
+        }
+      },
+      "source": {
+        "page": "175"
+      }
+    },
+    {
+      "color_id": "002252",
+      "name": "粉绿",
+      "rgb": {
+        "R": 178,
+        "G": 198,
+        "B": 191
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 35,
+          "M": 15,
+          "Y": 25,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "141"
+      }
+    },
+    {
+      "color_id": "002253",
+      "name": "葱白",
+      "rgb": {
+        "R": 246,
+        "G": 250,
+        "B": 237
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 5,
+          "M": 0,
+          "Y": 10,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "205"
+      }
+    },
+    {
+      "color_id": "002254",
+      "name": "青粲",
+      "rgb": {
+        "R": 195,
+        "G": 217,
+        "B": 78
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 0,
+          "Y": 80,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "061"
+      }
+    },
+    {
+      "color_id": "002255",
+      "name": "绿茶",
+      "rgb": {
+        "R": 145,
+        "G": 184,
+        "B": 33
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 50,
+          "M": 10,
+          "Y": 100,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "061"
+      }
+    },
+    {
+      "color_id": "002256",
+      "name": "鸭绿",
+      "rgb": {
+        "R": 40,
+        "G": 98,
+        "B": 92
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 85,
+          "M": 55,
+          "Y": 65,
+          "K": 10
+        }
+      },
+      "source": {
+        "page": "211"
+      }
+    },
+    {
+      "color_id": "002257",
+      "name": "豆青",
+      "rgb": {
+        "R": 161,
+        "G": 191,
+        "B": 176
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 42,
+          "M": 15,
+          "Y": 33,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "149"
+      }
+    },
+    {
+      "color_id": "002258",
+      "name": "葱黄",
+      "rgb": {
+        "R": 237,
+        "G": 241,
+        "B": 187
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 10,
+          "M": 0,
+          "Y": 35,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "103"
+      }
+    },
+    {
+      "color_id": "002259",
+      "name": "翠绿",
+      "rgb": {
+        "R": 183,
+        "G": 211,
+        "B": 50
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 35,
+          "M": 0,
+          "Y": 90,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "061"
+      }
+    },
+    {
+      "color_id": "002260",
+      "name": "柳绿",
+      "rgb": {
+        "R": 131,
+        "G": 173,
+        "B": 40
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 55,
+          "M": 15,
+          "Y": 100,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "061"
+      }
+    },
+    {
+      "color_id": "002261",
+      "name": "螺子黛",
+      "rgb": {
+        "R": 19,
+        "G": 57,
+        "B": 62
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 95,
+          "M": 80,
+          "Y": 75,
+          "K": 25
+        }
+      },
+      "source": {
+        "page": "049"
+      }
+    },
+    {
+      "color_id": "002262",
+      "name": "葱青",
+      "rgb": {
+        "R": 140,
+        "G": 183,
+        "B": 162
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 50,
+          "M": 15,
+          "Y": 40,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "211"
+      }
+    },
+    {
+      "color_id": "002263",
+      "name": "芽绿",
+      "rgb": {
+        "R": 222,
+        "G": 231,
+        "B": 161
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 17,
+          "M": 2,
+          "Y": 46,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "095"
+      }
+    },
+    {
+      "color_id": "002264",
+      "name": "葡萄水",
+      "rgb": {
+        "R": 183,
+        "G": 199,
+        "B": 65
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 35,
+          "M": 10,
+          "Y": 85,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "079"
+      }
+    },
+    {
+      "color_id": "002265",
+      "name": "庭芜绿",
+      "rgb": {
+        "R": 104,
+        "G": 148,
+        "B": 92
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 65,
+          "M": 30,
+          "Y": 75,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "047"
+      }
+    },
+    {
+      "color_id": "002266",
+      "name": "苍筤",
+      "rgb": {
+        "R": 153,
+        "G": 188,
+        "B": 172
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 45,
+          "M": 15,
+          "Y": 35,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "007"
+      }
+    },
+    {
+      "color_id": "002267",
+      "name": "缥碧",
+      "rgb": {
+        "R": 128,
+        "G": 164,
+        "B": 146
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 55,
+          "M": 25,
+          "Y": 45,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "007"
+      }
+    },
+    {
+      "color_id": "002268",
+      "name": "韭黄",
+      "rgb": {
+        "R": 221,
+        "G": 223,
+        "B": 114
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 18,
+          "M": 5,
+          "Y": 65,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "103"
+      }
+    },
+    {
+      "color_id": "002269",
+      "name": "青芥",
+      "rgb": {
+        "R": 183,
+        "G": 185,
+        "B": 77
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 35,
+          "M": 20,
+          "Y": 80,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "079"
+      }
+    },
+    {
+      "color_id": "002270",
+      "name": "无心绿",
+      "rgb": {
+        "R": 191,
+        "G": 209,
+        "B": 178
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 10,
+          "Y": 35,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "193"
+      }
+    },
+    {
+      "color_id": "002271",
+      "name": "粉青",
+      "rgb": {
+        "R": 196,
+        "G": 218,
+        "B": 214
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 27,
+          "M": 7,
+          "Y": 17,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "149"
+      }
+    },
+    {
+      "color_id": "002272",
+      "name": "柳黄",
+      "rgb": {
+        "R": 227,
+        "G": 235,
+        "B": 152
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 15,
+          "M": 0,
+          "Y": 50,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "103"
+      }
+    },
+    {
+      "color_id": "002273",
+      "name": "蜜绿",
+      "rgb": {
+        "R": 205,
+        "G": 209,
+        "B": 113
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 25,
+          "M": 10,
+          "Y": 65,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "103"
+      }
+    },
+    {
+      "color_id": "002274",
+      "name": "苹果",
+      "rgb": {
+        "R": 160,
+        "G": 191,
+        "B": 82
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 40,
+          "M": 10,
+          "Y": 80,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "079"
+      }
+    },
+    {
+      "color_id": "002275",
+      "name": "欧碧",
+      "rgb": {
+        "R": 192,
+        "G": 214,
+        "B": 149
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 5,
+          "Y": 50,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "019"
+      }
+    },
+    {
+      "color_id": "002276",
+      "name": "麴尘",
+      "rgb": {
+        "R": 192,
+        "G": 208,
+        "B": 157
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 10,
+          "Y": 45,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "123"
+      }
+    },
+    {
+      "color_id": "002277",
+      "name": "豆绿",
+      "rgb": {
+        "R": 152,
+        "G": 174,
+        "B": 102
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 0,
+          "Y": 60,
+          "K": 30
+        }
+      },
+      "source": {
+        "page": "149"
+      }
+    },
+    {
+      "color_id": "002278",
+      "name": "瑟瑟",
+      "rgb": {
+        "R": 79,
+        "G": 121,
+        "B": 74
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 75,
+          "M": 45,
+          "Y": 85,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "193"
+      }
+    },
+    {
+      "color_id": "002279",
+      "name": "油绿",
+      "rgb": {
+        "R": 80,
+        "G": 102,
+        "B": 73
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 73,
+          "M": 52,
+          "Y": 77,
+          "K": 15
+        }
+      },
+      "source": {
+        "page": "193"
+      }
+    },
+    {
+      "color_id": "002280",
+      "name": "水绿",
+      "rgb": {
+        "R": 168,
+        "G": 183,
+        "B": 140
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 40,
+          "M": 20,
+          "Y": 50,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "127"
+      }
+    },
+    {
+      "color_id": "002281",
+      "name": "春辰",
+      "rgb": {
+        "R": 178,
+        "G": 197,
+        "B": 136
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 36,
+          "M": 13,
+          "Y": 54,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "019"
+      }
+    },
+    {
+      "color_id": "002282",
+      "name": "碧山",
+      "rgb": {
+        "R": 119,
+        "G": 150,
+        "B": 73
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 60,
+          "M": 30,
+          "Y": 85,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "019"
+      }
+    },
+    {
+      "color_id": "002283",
+      "name": "翠微",
+      "rgb": {
+        "R": 76,
+        "G": 128,
+        "B": 69
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 75,
+          "M": 40,
+          "Y": 90,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "047"
+      }
+    },
+    {
+      "color_id": "002284",
+      "name": "绿沈",
+      "rgb": {
+        "R": 74,
+        "G": 95,
+        "B": 40
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 57,
+          "M": 28,
+          "Y": 84,
+          "K": 52
+        }
+      },
+      "source": {
+        "page": "123"
+      }
+    },
+    {
+      "color_id": "002285",
+      "name": "乌绿",
+      "rgb": {
+        "R": 144,
+        "G": 160,
+        "B": 125
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 50,
+          "M": 30,
+          "Y": 55,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "127"
+      }
+    },
+    {
+      "color_id": "002286",
+      "name": "苍葭",
+      "rgb": {
+        "R": 168,
+        "G": 191,
+        "B": 143
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 40,
+          "M": 15,
+          "Y": 50,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "047"
+      }
+    },
+    {
+      "color_id": "002287",
+      "name": "汁绿",
+      "rgb": {
+        "R": 106,
+        "G": 141,
+        "B": 82
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 65,
+          "M": 35,
+          "Y": 80,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "071"
+      }
+    },
+    {
+      "color_id": "002288",
+      "name": "官绿",
+      "rgb": {
+        "R": 42,
+        "G": 110,
+        "B": 63
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 85,
+          "M": 50,
+          "Y": 95,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "071"
+      }
+    },
+    {
+      "color_id": "002289",
+      "name": "松绿",
+      "rgb": {
+        "R": 61,
+        "G": 95,
+        "B": 54
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 80,
+          "M": 55,
+          "Y": 95,
+          "K": 15
+        }
+      },
+      "source": {
+        "page": "047"
+      }
+    },
+    {
+      "color_id": "002290",
+      "name": "松阴",
+      "rgb": {
+        "R": 129,
+        "G": 163,
+        "B": 128
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 55,
+          "M": 25,
+          "Y": 55,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "107"
+      }
+    },
+    {
+      "color_id": "002291",
+      "name": "梅子青",
+      "rgb": {
+        "R": 169,
+        "G": 189,
+        "B": 112
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 40,
+          "M": 15,
+          "Y": 65,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "079"
+      }
+    },
+    {
+      "color_id": "002292",
+      "name": "葱倩",
+      "rgb": {
+        "R": 108,
+        "G": 134,
+        "B": 80
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 65,
+          "M": 40,
+          "Y": 80,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "127"
+      }
+    },
+    {
+      "color_id": "002293",
+      "name": "涅绿",
+      "rgb": {
+        "R": 93,
+        "G": 114,
+        "B": 89
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 70,
+          "M": 50,
+          "Y": 70,
+          "K": 5
+        }
+      },
+      "source": {
+        "page": "193"
+      }
+    },
+    {
+      "color_id": "002294",
+      "name": "渌波",
+      "rgb": {
+        "R": 155,
+        "G": 180,
+        "B": 150
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 45,
+          "M": 20,
+          "Y": 45,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "107"
+      }
+    },
+    {
+      "color_id": "002295",
+      "name": "芸绿",
+      "rgb": {
+        "R": 105,
+        "G": 142,
+        "B": 106
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 65,
+          "M": 35,
+          "Y": 65,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "107"
+      }
+    },
+    {
+      "color_id": "002296",
+      "name": "青梅",
+      "rgb": {
+        "R": 148,
+        "G": 182,
+        "B": 111
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 48,
+          "M": 15,
+          "Y": 66,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "149"
+      }
+    },
+    {
+      "color_id": "002297",
+      "name": "漆姑",
+      "rgb": {
+        "R": 93,
+        "G": 131,
+        "B": 81
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 70,
+          "M": 40,
+          "Y": 80,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "071"
+      }
+    },
+    {
+      "color_id": "002298",
+      "name": "青青",
+      "rgb": {
+        "R": 79,
+        "G": 111,
+        "B": 70
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 75,
+          "M": 50,
+          "Y": 85,
+          "K": 5
+        }
+      },
+      "source": {
+        "page": "019"
+      }
+    },
+    {
+      "color_id": "002299",
+      "name": "山岚",
+      "rgb": {
+        "R": 190,
+        "G": 210,
+        "B": 187
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 10,
+          "Y": 30,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "107"
+      }
+    },
+    {
+      "color_id": "002300",
+      "name": "王刍",
+      "rgb": {
+        "R": 162,
+        "G": 157,
+        "B": 107
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 43,
+          "M": 35,
+          "Y": 63,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "095"
+      }
+    },
+    {
+      "color_id": "002301",
+      "name": "韶粉",
+      "rgb": {
+        "R": 224,
+        "G": 224,
+        "B": 208
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 15,
+          "M": 10,
+          "Y": 20,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "029"
+      }
+    },
+    {
+      "color_id": "002302",
+      "name": "山谷褐",
+      "rgb": {
+        "R": 131,
+        "G": 119,
+        "B": 92
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 53,
+          "M": 50,
+          "Y": 64,
+          "K": 10
+        }
+      },
+      "source": {
+        "page": "039"
+      }
+    },
+    {
+      "color_id": "002303",
+      "name": "凝脂",
+      "rgb": {
+        "R": 245,
+        "G": 242,
+        "B": 233
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 5,
+          "M": 5,
+          "Y": 10,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "133"
+      }
+    },
+    {
+      "color_id": "002304",
+      "name": "驼色",
+      "rgb": {
+        "R": 170,
+        "G": 142,
+        "B": 89
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 40,
+          "M": 45,
+          "Y": 70,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "105"
+      }
+    },
+    {
+      "color_id": "002305",
+      "name": "黑褐",
+      "rgb": {
+        "R": 124,
+        "G": 108,
+        "B": 104
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 54,
+          "M": 54,
+          "Y": 51,
+          "K": 15
+        }
+      },
+      "source": {
+        "page": "087"
+      }
+    },
+    {
+      "color_id": "002306",
+      "name": "筠雾",
+      "rgb": {
+        "R": 213,
+        "G": 209,
+        "B": 174
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 20,
+          "M": 15,
+          "Y": 35,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "077"
+      }
+    },
+    {
+      "color_id": "002307",
+      "name": "绞衣",
+      "rgb": {
+        "R": 127,
+        "G": 117,
+        "B": 76
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 55,
+          "M": 50,
+          "Y": 75,
+          "K": 10
+        }
+      },
+      "source": {
+        "page": "123"
+      }
+    },
+    {
+      "color_id": "002308",
+      "name": "银鼠",
+      "rgb": {
+        "R": 241,
+        "G": 234,
+        "B": 213
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 7,
+          "M": 8,
+          "Y": 19,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "029"
+      }
+    },
+    {
+      "color_id": "002309",
+      "name": "黄琮",
+      "rgb": {
+        "R": 158,
+        "G": 140,
+        "B": 107
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 45,
+          "M": 45,
+          "Y": 60,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "177"
+      }
+    },
+    {
+      "color_id": "002310",
+      "name": "滑石",
+      "rgb": {
+        "R": 216,
+        "G": 209,
+        "B": 197
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 15,
+          "M": 15,
+          "Y": 20,
+          "K": 5
+        }
+      },
+      "source": {
+        "page": "121"
+      }
+    },
+    {
+      "color_id": "002311",
+      "name": "瓷秘",
+      "rgb": {
+        "R": 191,
+        "G": 192,
+        "B": 150
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 20,
+          "Y": 45,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "077"
+      }
+    },
+    {
+      "color_id": "002312",
+      "name": "綟绶",
+      "rgb": {
+        "R": 117,
+        "G": 108,
+        "B": 75
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 60,
+          "M": 55,
+          "Y": 75,
+          "K": 10
+        }
+      },
+      "source": {
+        "page": "191"
+      }
+    },
+    {
+      "color_id": "002313",
+      "name": "石蜜",
+      "rgb": {
+        "R": 212,
+        "G": 191,
+        "B": 137
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 20,
+          "M": 25,
+          "Y": 50,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "105"
+      }
+    },
+    {
+      "color_id": "002314",
+      "name": "茶色",
+      "rgb": {
+        "R": 136,
+        "G": 118,
+        "B": 87
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 55,
+          "M": 55,
+          "Y": 70,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "177"
+      }
+    },
+    {
+      "color_id": "002315",
+      "name": "云母",
+      "rgb": {
+        "R": 198,
+        "G": 190,
+        "B": 177
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 20,
+          "M": 20,
+          "Y": 25,
+          "K": 10
+        }
+      },
+      "source": {
+        "page": "121"
+      }
+    },
+    {
+      "color_id": "002316",
+      "name": "青圭",
+      "rgb": {
+        "R": 146,
+        "G": 144,
+        "B": 93
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 50,
+          "M": 40,
+          "Y": 70,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "077"
+      }
+    },
+    {
+      "color_id": "002317",
+      "name": "素綦",
+      "rgb": {
+        "R": 89,
+        "G": 83,
+        "B": 51
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 70,
+          "M": 65,
+          "Y": 90,
+          "K": 20
+        }
+      },
+      "source": {
+        "page": "123"
+      }
+    },
+    {
+      "color_id": "002318",
+      "name": "枯竹褐",
+      "rgb": {
+        "R": 191,
+        "G": 166,
+        "B": 112
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 35,
+          "Y": 60,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "105"
+      }
+    },
+    {
+      "color_id": "002319",
+      "name": "伽罗",
+      "rgb": {
+        "R": 109,
+        "G": 92,
+        "B": 61
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 60,
+          "M": 60,
+          "Y": 80,
+          "K": 20
+        }
+      },
+      "source": {
+        "page": "177"
+      }
+    },
+    {
+      "color_id": "002320",
+      "name": "葭灰",
+      "rgb": {
+        "R": 190,
+        "G": 177,
+        "B": 170
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 30,
+          "Y": 30,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "015"
+      }
+    },
+    {
+      "color_id": "002321",
+      "name": "荩箧",
+      "rgb": {
+        "R": 135,
+        "G": 125,
+        "B": 82
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 55,
+          "M": 50,
+          "Y": 75,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "095"
+      }
+    },
+    {
+      "color_id": "002322",
+      "name": "绿豆褐",
+      "rgb": {
+        "R": 180,
+        "G": 165,
+        "B": 116
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 35,
+          "M": 34,
+          "Y": 58,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "215"
+      }
+    },
+    {
+      "color_id": "002323",
+      "name": "秋褐",
+      "rgb": {
+        "R": 165,
+        "G": 147,
+        "B": 90
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 42,
+          "M": 41,
+          "Y": 71,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "215"
+      }
+    },
+    {
+      "color_id": "002324",
+      "name": "苍艾",
+      "rgb": {
+        "R": 90,
+        "G": 76,
+        "B": 59
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 65,
+          "M": 65,
+          "Y": 75,
+          "K": 30
+        }
+      },
+      "source": {
+        "page": "177"
+      }
+    },
+    {
+      "color_id": "002325",
+      "name": "画眉褐",
+      "rgb": {
+        "R": 172,
+        "G": 159,
+        "B": 138
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 30,
+          "Y": 40,
+          "K": 15
+        }
+      },
+      "source": {
+        "page": "121"
+      }
+    },
+    {
+      "color_id": "002326",
+      "name": "桃灰",
+      "rgb": {
+        "R": 168,
+        "G": 155,
+        "B": 153
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 40,
+          "M": 39,
+          "Y": 35,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "065"
+      }
+    },
+    {
+      "color_id": "002327",
+      "name": "墨黪",
+      "rgb": {
+        "R": 88,
+        "G": 82,
+        "B": 72
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 70,
+          "M": 65,
+          "Y": 70,
+          "K": 20
+        }
+      },
+      "source": {
+        "page": "203"
+      }
+    },
+    {
+      "color_id": "002328",
+      "name": "紫灰",
+      "rgb": {
+        "R": 211,
+        "G": 204,
+        "B": 214
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 20,
+          "M": 20,
+          "Y": 10,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "041"
+      }
+    },
+    {
+      "color_id": "002329",
+      "name": "库灰",
+      "rgb": {
+        "R": 146,
+        "G": 129,
+        "B": 135
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 50,
+          "M": 50,
+          "Y": 40,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "137"
+      }
+    },
+    {
+      "color_id": "002330",
+      "name": "青黛",
+      "rgb": {
+        "R": 69,
+        "G": 70,
+        "B": 94
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 80,
+          "M": 75,
+          "Y": 50,
+          "K": 15
+        }
+      },
+      "source": {
+        "page": "027"
+      }
+    },
+    {
+      "color_id": "002331",
+      "name": "濯绛",
+      "rgb": {
+        "R": 121,
+        "G": 104,
+        "B": 96
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 60,
+          "M": 60,
+          "Y": 60,
+          "K": 5
+        }
+      },
+      "source": {
+        "page": "203"
+      }
+    },
+    {
+      "color_id": "002332",
+      "name": "驖骊",
+      "rgb": {
+        "R": 70,
+        "G": 67,
+        "B": 59
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 75,
+          "M": 70,
+          "Y": 75,
+          "K": 30
+        }
+      },
+      "source": {
+        "page": "203"
+      }
+    },
+    {
+      "color_id": "002333",
+      "name": "驼绒",
+      "rgb": {
+        "R": 211,
+        "G": 203,
+        "B": 197
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 20,
+          "M": 20,
+          "Y": 20,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "137"
+      }
+    },
+    {
+      "color_id": "002334",
+      "name": "鸦雏",
+      "rgb": {
+        "R": 98,
+        "G": 95,
+        "B": 110
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 62,
+          "M": 55,
+          "Y": 40,
+          "K": 24
+        }
+      },
+      "source": {
+        "page": "159"
+      }
+    },
+    {
+      "color_id": "002335",
+      "name": "䒌靘",
+      "rgb": {
+        "R": 69,
+        "G": 70,
+        "B": 89
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 80,
+          "M": 75,
+          "Y": 55,
+          "K": 15
+        }
+      },
+      "source": {
+        "page": "083"
+      }
+    },
+    {
+      "color_id": "002336",
+      "name": "鼠毛",
+      "rgb": {
+        "R": 112,
+        "G": 105,
+        "B": 93
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 65,
+          "M": 60,
+          "Y": 65,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "065"
+      }
+    },
+    {
+      "color_id": "002337",
+      "name": "京元",
+      "rgb": {
+        "R": 49,
+        "G": 50,
+        "B": 44
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 80,
+          "M": 75,
+          "Y": 80,
+          "K": 45
+        }
+      },
+      "source": {
+        "page": "203"
+      }
+    },
+    {
+      "color_id": "002338",
+      "name": "藕色",
+      "rgb": {
+        "R": 200,
+        "G": 181,
+        "B": 179
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 25,
+          "M": 30,
+          "Y": 25,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "137"
+      }
+    },
+    {
+      "color_id": "002339",
+      "name": "油里墨",
+      "rgb": {
+        "R": 89,
+        "G": 76,
+        "B": 87
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 65,
+          "M": 65,
+          "Y": 50,
+          "K": 30
+        }
+      },
+      "source": {
+        "page": "137"
+      }
+    },
+    {
+      "color_id": "002340",
+      "name": "祭蓝",
+      "rgb": {
+        "R": 60,
+        "G": 70,
+        "B": 84
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 80,
+          "M": 70,
+          "Y": 55,
+          "K": 25
+        }
+      },
+      "source": {
+        "page": "209"
+      }
+    },
+    {
+      "color_id": "002341",
+      "name": "石涅",
+      "rgb": {
+        "R": 104,
+        "G": 106,
+        "B": 103
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 65,
+          "M": 55,
+          "Y": 55,
+          "K": 10
+        }
+      },
+      "source": {
+        "page": "087"
+      }
+    },
+    {
+      "color_id": "002342",
+      "name": "玄天",
+      "rgb": {
+        "R": 46,
+        "G": 32,
+        "B": 29
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 75,
+          "M": 80,
+          "Y": 80,
+          "K": 60
+        }
+      },
+      "source": {
+        "page": "015"
+      }
+    },
+    {
+      "color_id": "002343",
+      "name": "藕丝褐",
+      "rgb": {
+        "R": 168,
+        "G": 135,
+        "B": 135
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 40,
+          "M": 50,
+          "Y": 40,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "179"
+      }
+    },
+    {
+      "color_id": "002344",
+      "name": "烟墨",
+      "rgb": {
+        "R": 92,
+        "G": 79,
+        "B": 85
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 70,
+          "M": 70,
+          "Y": 60,
+          "K": 15
+        }
+      },
+      "source": {
+        "page": "159"
+      }
+    },
+    {
+      "color_id": "002345",
+      "name": "鸦青",
+      "rgb": {
+        "R": 52,
+        "G": 48,
+        "B": 65
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 85,
+          "M": 85,
+          "Y": 65,
+          "K": 30
+        }
+      },
+      "source": {
+        "page": "083"
+      }
+    },
+    {
+      "color_id": "002346",
+      "name": "暝色",
+      "rgb": {
+        "R": 86,
+        "G": 90,
+        "B": 94
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 70,
+          "M": 60,
+          "Y": 54,
+          "K": 19
+        }
+      },
+      "source": {
+        "page": "215"
+      }
+    },
+    {
+      "color_id": "002347",
+      "name": "黯紫",
+      "rgb": {
+        "R": 145,
+        "G": 130,
+        "B": 143
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 50,
+          "M": 50,
+          "Y": 35,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "159"
+      }
+    },
+    {
+      "color_id": "002348",
+      "name": "雪灰",
+      "rgb": {
+        "R": 168,
+        "G": 127,
+        "B": 141
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 40,
+          "M": 55,
+          "Y": 33,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "041"
+      }
+    },
+    {
+      "color_id": "002349",
+      "name": "曾青",
+      "rgb": {
+        "R": 83,
+        "G": 81,
+        "B": 100
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 75,
+          "M": 70,
+          "Y": 50,
+          "K": 10
+        }
+      },
+      "source": {
+        "page": "083"
+      }
+    },
+    {
+      "color_id": "002350",
+      "name": "绀蝶",
+      "rgb": {
+        "R": 44,
+        "G": 47,
+        "B": 59
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 85,
+          "M": 80,
+          "Y": 65,
+          "K": 40
+        }
+      },
+      "source": {
+        "page": "027"
+      }
+    },
+    {
+      "color_id": "002351",
+      "name": "石青",
+      "rgb": {
+        "R": 30,
+        "G": 39,
+        "B": 50
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 90,
+          "M": 85,
+          "Y": 70,
+          "K": 45
+        }
+      },
+      "source": {
+        "page": "083"
+      }
+    },
+    {
+      "color_id": "002352",
+      "name": "月照",
+      "rgb": {
+        "R": 239,
+        "G": 240,
+        "B": 241
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 8,
+          "M": 5,
+          "Y": 5,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "087"
+      }
+    },
+    {
+      "color_id": "002353",
+      "name": "甜白",
+      "rgb": {
+        "R": 231,
+        "G": 229,
+        "B": 230
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 11,
+          "M": 10,
+          "Y": 8,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "091"
+      }
+    },
+    {
+      "color_id": "002354",
+      "name": "牙笏",
+      "rgb": {
+        "R": 213,
+        "G": 200,
+        "B": 160
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 20,
+          "M": 20,
+          "Y": 40,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "133"
+      }
+    },
+    {
+      "color_id": "002355",
+      "name": "冻缥",
+      "rgb": {
+        "R": 190,
+        "G": 194,
+        "B": 179
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 20,
+          "Y": 30,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "039"
+      }
+    },
+    {
+      "color_id": "002356",
+      "name": "青骊",
+      "rgb": {
+        "R": 21,
+        "G": 29,
+        "B": 41
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 85,
+          "M": 75,
+          "Y": 60,
+          "K": 65
+        }
+      },
+      "source": {
+        "page": "209"
+      }
+    },
+    {
+      "color_id": "002357",
+      "name": "呆白",
+      "rgb": {
+        "R": 238,
+        "G": 238,
+        "B": 236
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 8,
+          "M": 6,
+          "Y": 7,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "091"
+      }
+    },
+    {
+      "color_id": "002358",
+      "name": "白垩",
+      "rgb": {
+        "R": 231,
+        "G": 225,
+        "B": 219
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 11,
+          "M": 12,
+          "Y": 13,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "163"
+      }
+    },
+    {
+      "color_id": "002359",
+      "name": "余白",
+      "rgb": {
+        "R": 201,
+        "G": 207,
+        "B": 193
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 25,
+          "M": 15,
+          "Y": 25,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "127"
+      }
+    },
+    {
+      "color_id": "002360",
+      "name": "草白",
+      "rgb": {
+        "R": 191,
+        "G": 193,
+        "B": 169
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 20,
+          "Y": 35,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "191"
+      }
+    },
+    {
+      "color_id": "002361",
+      "name": "浅云",
+      "rgb": {
+        "R": 234,
+        "G": 238,
+        "B": 241
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 10,
+          "M": 5,
+          "Y": 5,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "147"
+      }
+    },
+    {
+      "color_id": "002362",
+      "name": "蛤粉",
+      "rgb": {
+        "R": 239,
+        "G": 238,
+        "B": 231
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 8,
+          "M": 6,
+          "Y": 10,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "029"
+      }
+    },
+    {
+      "color_id": "002363",
+      "name": "玉色",
+      "rgb": {
+        "R": 234,
+        "G": 228,
+        "B": 209
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 10,
+          "M": 10,
+          "Y": 20,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "133"
+      }
+    },
+    {
+      "color_id": "002364",
+      "name": "芦花",
+      "rgb": {
+        "R": 212,
+        "G": 211,
+        "B": 202
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 20,
+          "M": 15,
+          "Y": 20,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "065"
+      }
+    },
+    {
+      "color_id": "002365",
+      "name": "青古",
+      "rgb": {
+        "R": 179,
+        "G": 189,
+        "B": 169
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 35,
+          "M": 20,
+          "Y": 35,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "141"
+      }
+    },
+    {
+      "color_id": "002366",
+      "name": "卵白",
+      "rgb": {
+        "R": 245,
+        "G": 243,
+        "B": 242
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 5,
+          "M": 5,
+          "Y": 5,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "091"
+      }
+    },
+    {
+      "color_id": "002367",
+      "name": "砗磲白",
+      "rgb": {
+        "R": 240,
+        "G": 236,
+        "B": 226
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 4,
+          "M": 5,
+          "Y": 10,
+          "K": 5
+        }
+      },
+      "source": {
+        "page": "091"
+      }
+    },
+    {
+      "color_id": "002368",
+      "name": "牙色",
+      "rgb": {
+        "R": 223,
+        "G": 215,
+        "B": 194
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 15,
+          "M": 15,
+          "Y": 25,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "163"
+      }
+    },
+    {
+      "color_id": "002369",
+      "name": "青灰",
+      "rgb": {
+        "R": 199,
+        "G": 198,
+        "B": 182
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 20,
+          "M": 15,
+          "Y": 25,
+          "K": 10
+        }
+      },
+      "source": {
+        "page": "029"
+      }
+    },
+    {
+      "color_id": "002370",
+      "name": "绿矾",
+      "rgb": {
+        "R": 180,
+        "G": 189,
+        "B": 160
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 35,
+          "M": 20,
+          "Y": 40,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "095"
+      }
+    },
+    {
+      "color_id": "002371",
+      "name": "缟羽",
+      "rgb": {
+        "R": 239,
+        "G": 239,
+        "B": 239
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 0,
+          "M": 0,
+          "Y": 0,
+          "K": 10
+        }
+      },
+      "source": {
+        "page": "121"
+      }
+    },
+    {
+      "color_id": "002372",
+      "name": "米汤娇",
+      "rgb": {
+        "R": 238,
+        "G": 234,
+        "B": 217
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 5,
+          "M": 5,
+          "Y": 15,
+          "K": 5
+        }
+      },
+      "source": {
+        "page": "191"
+      }
+    },
+    {
+      "color_id": "002373",
+      "name": "象牙",
+      "rgb": {
+        "R": 223,
+        "G": 214,
+        "B": 184
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 15,
+          "M": 15,
+          "Y": 30,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "133"
+      }
+    },
+    {
+      "color_id": "002374",
+      "name": "鹤灰",
+      "rgb": {
+        "R": 190,
+        "G": 194,
+        "B": 188
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 30,
+          "M": 20,
+          "Y": 25,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "065"
+      }
+    },
+    {
+      "color_id": "002375",
+      "name": "不皂",
+      "rgb": {
+        "R": 167,
+        "G": 170,
+        "B": 161
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 40,
+          "M": 30,
+          "Y": 35,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "087"
+      }
+    },
+    {
+      "color_id": "002376",
+      "name": "砂绿",
+      "rgb": {
+        "R": 169,
+        "G": 168,
+        "B": 134
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 40,
+          "M": 30,
+          "Y": 50,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "077"
+      }
+    },
+    {
+      "color_id": "002377",
+      "name": "千山翠",
+      "rgb": {
+        "R": 107,
+        "G": 125,
+        "B": 115
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 60,
+          "M": 40,
+          "Y": 50,
+          "K": 15
+        }
+      },
+      "source": {
+        "page": "135"
+      }
+    },
+    {
+      "color_id": "002378",
+      "name": "春碧",
+      "rgb": {
+        "R": 157,
+        "G": 157,
+        "B": 130
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 45,
+          "M": 35,
+          "Y": 50,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "039"
+      }
+    },
+    {
+      "color_id": "002379",
+      "name": "结绿",
+      "rgb": {
+        "R": 85,
+        "G": 95,
+        "B": 77
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 70,
+          "M": 55,
+          "Y": 70,
+          "K": 20
+        }
+      },
+      "source": {
+        "page": "135"
+      }
+    },
+    {
+      "color_id": "002380",
+      "name": "茶绿褐",
+      "rgb": {
+        "R": 134,
+        "G": 132,
+        "B": 107
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 55,
+          "M": 46,
+          "Y": 60,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "215"
+      }
+    },
+    {
+      "color_id": "002381",
+      "name": "绿云",
+      "rgb": {
+        "R": 69,
+        "G": 73,
+        "B": 61
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 75,
+          "M": 65,
+          "Y": 75,
+          "K": 30
+        }
+      },
+      "source": {
+        "page": "135"
+      }
+    },
+    {
+      "color_id": "002382",
+      "name": "苔古",
+      "rgb": {
+        "R": 121,
+        "G": 131,
+        "B": 108
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 60,
+          "M": 45,
+          "Y": 60,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "039"
+      }
+    },
+    {
+      "color_id": "002383",
+      "name": "瓦灰",
+      "rgb": {
+        "R": 134,
+        "G": 144,
+        "B": 138
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 50,
+          "M": 35,
+          "Y": 40,
+          "K": 10
+        }
+      },
+      "source": {
+        "page": "135"
+      }
+    },
+    {
+      "color_id": "002384",
+      "name": "祖母绿",
+      "rgb": {
+        "R": 0,
+        "G": 149,
+        "B": 62
+      },
+      "enabled": true,
+      "metadata": {
+        "cmyk": {
+          "C": 85,
+          "M": 15,
+          "Y": 100,
+          "K": 0
+        }
+      },
+      "source": {
+        "page": "071"
+      }
+    }
+  ]
+}
