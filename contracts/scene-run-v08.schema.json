@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "scene-run-v08.schema.json",
+  "title": "v0.8 confirmed-goal result.json (accepted current images only)",
+  "type": "object",
+  "required": ["schema_version", "case_id", "label", "plugin_id", "plugin", "source_image", "palette_binding", "diagnosis", "status", "target_count", "accepted_count", "solutions", "missing_solution_ids", "solution_statuses", "attempts", "budget", "limitations"],
+  "properties": {
+    "schema_version": {"const": "0.8.0"},
+    "run_mode": {"enum": ["live", "test"]},
+    "brief_status": {"enum": ["awaiting_proposal", "awaiting_confirmation", "confirmed", "test_confirmed"]},
+    "confirmed_brief": {"type": ["object", "null"], "required": ["version", "record_sha256", "summary", "goals", "supporting_changes", "preserve", "priorities", "confirmation"], "properties": {
+      "version": {"type": "integer", "minimum": 1}, "record_sha256": {"$ref": "#/$defs/sha"},
+      "summary": {"type": "string", "minLength": 1},
+      "goals": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["id", "subject", "outcome"]}},
+      "supporting_changes": {"$ref": "#/$defs/strings"}, "preserve": {"$ref": "#/$defs/strings"}, "priorities": {"$ref": "#/$defs/strings"},
+      "confirmation": {"type": "object", "required": ["brief_sha256", "source", "user_reply", "message_reference", "recorded_at"]}
+    }},
+    "case_id": {"$ref": "#/$defs/id"},
+    "label": {"type": "string", "minLength": 1},
+    "plugin_id": {"$ref": "#/$defs/id"},
+    "plugin": {
+      "type": "object",
+      "required": ["id", "version", "path", "sha256", "requested_id", "fallback_reason", "index_sha256"],
+      "properties": {
+        "id": {"type": "string"}, "version": {"type": "string"}, "path": {"type": "string"},
+        "sha256": {"$ref": "#/$defs/sha"}, "requested_id": {"type": "string"},
+        "fallback_reason": {"type": ["string", "null"]}, "index_sha256": {"$ref": "#/$defs/sha"}
+      }
+    },
+    "source_image": {
+      "type": "object", "required": ["path", "sha256", "width", "height", "format"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1}, "sha256": {"$ref": "#/$defs/sha"},
+        "width": {"type": "integer", "minimum": 1}, "height": {"type": "integer", "minimum": 1},
+        "format": {"enum": ["PNG", "JPEG", "WEBP"]}
+      }
+    },
+    "palette_binding": {"type": "object", "required": ["palette_id", "palette_content_sha256", "palette_source_sha256", "run_id"]},
+    "diagnosis": {
+      "type": ["object", "null"],
+      "required": ["purpose", "strengths", "problems", "objects", "targets", "reading_targets", "objective_checks"]
+    },
+    "status": {"enum": ["complete", "partial", "blocked"]},
+    "target_count": {"const": 5},
+    "accepted_count": {"type": "integer", "minimum": 0, "maximum": 5},
+    "solutions": {"type": "array", "maxItems": 5, "items": {"$ref": "#/$defs/solution"}},
+    "missing_solution_ids": {"type": "array", "uniqueItems": true, "items": {"enum": ["A", "B", "C", "D", "E"]}},
+    "solution_statuses": {
+      "type": "array", "minItems": 5, "maxItems": 5,
+      "items": {"type": "object", "required": ["id", "status", "reason"], "properties": {
+        "id": {"enum": ["A", "B", "C", "D", "E"]},
+        "status": {"enum": ["accepted", "rejected", "pending", "stale"]}, "reason": {"type": "string"}, "code": {"type": "string"}
+      }}
+    },
+    "attempts": {"type": "array", "maxItems": 7, "items": {"$ref": "#/$defs/attempt"}},
+    "budget": {"type": "object", "required": ["initial_limit", "retry_limit", "calls_used", "retry_used"]},
+    "limitations": {"$ref": "#/$defs/strings"}
+  },
+  "additionalProperties": false,
+  "allOf": [{"required": ["run_mode", "brief_status", "confirmed_brief"]}, {"if": {"properties": {"status": {"const": "complete"}}}, "then": {
+    "properties": {"accepted_count": {"const": 5}, "solutions": {"minItems": 5}, "missing_solution_ids": {"maxItems": 0}}
+  }}],
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"},
+    "sha": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "strings": {"type": "array", "items": {"type": "string"}},
+    "dimension": {"type": "object", "required": ["score", "evidence"], "properties": {
+      "score": {"type": "integer", "minimum": 0, "maximum": 100, "multipleOf": 10},
+      "evidence": {"type": "string", "minLength": 1}
+    }, "additionalProperties": false},
+    "subjective": {"type": "object", "required": ["dimensions", "weights", "total", "source", "calibrated"], "properties": {
+      "dimensions": {"type": "object", "required": ["beauty", "organization", "scene_fit", "material_naturalness"], "properties": {
+        "beauty": {"$ref": "#/$defs/dimension"}, "organization": {"$ref": "#/$defs/dimension"},
+        "scene_fit": {"$ref": "#/$defs/dimension"}, "material_naturalness": {"$ref": "#/$defs/dimension"}
+      }, "additionalProperties": false},
+      "weights": {"const": {"beauty": 0.5, "organization": 0.2, "scene_fit": 0.2, "material_naturalness": 0.1}},
+      "total": {"type": "number", "minimum": 0, "maximum": 100},
+      "source": {"const": "model_visual_review"}, "calibrated": {"const": false}
+    }},
+    "measurement": {"type": "object", "required": ["status", "value", "threshold", "source", "reason"], "properties": {
+      "status": {"enum": ["pass", "fail", "unknown", "not_applicable"]},
+      "value": {"type": ["number", "null"]}, "threshold": {"type": ["number", "null"]},
+      "source": {"type": ["object", "string", "null"]}, "reason": {"type": "string"}
+    }},
+    "objective": {"type": "object", "required": ["checks", "applicable_count", "measured_count", "passed_count", "failed_count", "unknown_count", "coverage", "pass_rate"], "properties": {
+      "checks": {"type": "array", "items": {"allOf": [{"$ref": "#/$defs/measurement"}, {
+        "type": "object", "required": ["id", "kind", "applicable", "required", "planned"], "properties": {
+          "id": {"$ref": "#/$defs/id"}, "kind": {"enum": ["contrast", "external"]},
+          "applicable": {"type": "boolean"}, "required": {"type": "boolean"}, "planned": {"$ref": "#/$defs/measurement"}
+        }
+      }]}},
+      "applicable_count": {"type": "integer", "minimum": 0}, "measured_count": {"type": "integer", "minimum": 0},
+      "passed_count": {"type": "integer", "minimum": 0}, "failed_count": {"type": "integer", "minimum": 0},
+      "unknown_count": {"type": "integer", "minimum": 0},
+      "coverage": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+      "pass_rate": {"type": ["number", "null"], "minimum": 0, "maximum": 1}
+    }},
+    "area": {"type": "object", "required": ["id", "object_id", "location", "target_ids"], "properties": {
+      "id": {"$ref": "#/$defs/id"}, "object_id": {"$ref": "#/$defs/id"},
+      "location": {"type": "string"}, "target_ids": {"$ref": "#/$defs/strings"},
+      "share": {"type": "object", "required": ["value", "basis", "reason"], "properties": {
+        "value": {"type": "number", "exclusiveMinimum": 0, "maximum": 1},
+        "basis": {"enum": ["proposed", "estimated"]}, "reason": {"type": "string"}
+      }}
+    }},
+    "color": {"type": "object", "required": ["color_id", "name", "hex", "rgb", "role", "areas"], "properties": {
+      "color_id": {"$ref": "#/$defs/id"}, "name": {"type": "string"},
+      "hex": {"type": "string", "pattern": "^#[0-9A-F]{6}$"},
+      "rgb": {"type": "object", "required": ["R", "G", "B"], "additionalProperties": {"type": "integer", "minimum": 0, "maximum": 255}},
+      "role": {"type": "string"}, "areas": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/area"}}
+    }},
+    "solution": {"type": "object", "required": ["id", "label", "title", "design_logic", "colors", "image_path", "image_sha256", "plan_sha256", "prompt_path", "prompt_sha256", "subjective", "objective", "decision", "reason", "limitations", "warnings", "integrity", "goal_checks", "failure_stage", "goal_binding"], "properties": {
+      "goal_checks": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["goal_id", "status", "note"], "properties": {"goal_id": {"$ref": "#/$defs/id"}, "status": {"const": "pass"}, "note": {"type": "string", "minLength": 1}}}},
+      "failure_stage": {"const": "none"}, "goal_binding": {"type": "object", "required": ["record_sha256", "confirmation_sha256"]},
+      "id": {"enum": ["A", "B", "C", "D", "E"]}, "label": {"type": "string"}, "title": {"type": "string"}, "design_logic": {"type": "string"},
+      "colors": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/color"}},
+      "image_path": {"type": "string"}, "image_sha256": {"$ref": "#/$defs/sha"}, "plan_sha256": {"$ref": "#/$defs/sha"},
+      "prompt_path": {"type": "string"}, "prompt_sha256": {"$ref": "#/$defs/sha"},
+      "subjective": {"$ref": "#/$defs/subjective"}, "objective": {"$ref": "#/$defs/objective"},
+      "decision": {"const": "accept"}, "reason": {"type": "string"}, "limitations": {"$ref": "#/$defs/strings"}, "warnings": {"$ref": "#/$defs/strings"},
+      "integrity": {"type": "object", "required": ["status", "review_path", "review_sha256"], "properties": {"status": {"const": "pass"}, "review_path": {"type": "string"}, "review_sha256": {"$ref": "#/$defs/sha"}}}
+    }},
+    "attempt": {"type": "object", "required": ["id", "solution_id", "kind", "reason", "status", "plan_sha256", "prompt_path", "prompt_sha256"], "properties": {
+      "id": {"$ref": "#/$defs/id"}, "solution_id": {"enum": ["A", "B", "C", "D", "E"]},
+      "kind": {"enum": ["initial", "retry"]}, "reason": {"type": "string"}, "status": {"enum": ["pending", "failed", "registered"]},
+      "plan_sha256": {"$ref": "#/$defs/sha"}, "prompt_path": {"type": "string"}, "prompt_sha256": {"$ref": "#/$defs/sha"},
+      "image_path": {"type": "string"}, "image_sha256": {"$ref": "#/$defs/sha"}, "error": {"type": "string"}
+    }}
+  }
+}

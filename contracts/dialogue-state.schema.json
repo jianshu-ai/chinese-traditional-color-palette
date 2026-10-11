@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dialogue-state.schema.json",
+  "description": "Thin session slice of scene.json. Frozen evidence and state bindings are additionally verified by the CLI; schema alone cannot authenticate conversation or prevent external tool calls.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "phase",
+    "next_action",
+    "dialogue",
+    "target_count"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.10.0"
+    },
+    "phase": {
+      "enum": [
+        "needs_requirements",
+        "needs_round_details",
+        "needs_round_authorization",
+        "planning",
+        "generating",
+        "reviewing",
+        "repairing",
+        "recovering",
+        "delivering",
+        "awaiting_continue",
+        "ended",
+        "non_generating"
+      ]
+    },
+    "next_action": {
+      "type": "object",
+      "required": [
+        "kind",
+        "action",
+        "image_tool_allowed"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "ask",
+            "auto",
+            "reconcile",
+            "none"
+          ]
+        },
+        "action": {
+          "type": "string",
+          "minLength": 1
+        },
+        "image_tool_allowed": {
+          "type": "boolean"
+        },
+        "question": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "ask"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "question"
+            ]
+          }
+        }
+      ]
+    },
+    "target_count": {
+      "enum": [
+        null,
+        5,
+        10
+      ]
+    },
+    "dialogue": {
+      "type": "object",
+      "required": [
+        "purpose",
+        "stopped",
+        "round_number",
+        "authorization",
+        "request",
+        "delivery",
+        "history",
+        "events",
+        "preferences",
+        "requested_count"
+      ],
+      "properties": {
+        "purpose": {
+          "enum": [
+            "design",
+            "plan",
+            "diagnose"
+          ]
+        },
+        "stopped": {
+          "type": "boolean"
+        },
+        "round_number": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "authorization": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "request": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "delivery": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "history": {
+          "type": "array"
+        },
+        "events": {
+          "type": "array"
+        },
+        "preferences": {
+          "type": "array"
+        },
+        "requested_count": {
+          "enum": [
+            null,
+            5,
+            10
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "palette_binding",
+    "user_request",
+    "input",
+    "mode",
+    "solution_count",
+    "count_reason",
+    "object_kind",
+    "text_status",
+    "evidence",
+    "constraints"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.1.0"
+    },
+    "palette_binding": {
+      "$ref": "common.schema.json"
+    },
+    "user_request": {
+      "type": "string"
+    },
+    "input": {
+      "type": "object",
+      "required": [
+        "type",
+        "sha256"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "mode": {
+      "enum": [
+        "palette_design",
+        "faithful_recolor"
+      ]
+    },
+    "solution_count": {
+      "type": "integer",
+      "minimum": 4,
+      "maximum": 6
+    },
+    "count_reason": {
+      "type": "string"
+    },
+    "object_kind": {
+      "enum": [
+        "toy",
+        "streetscape",
+        "packaging",
+        "other"
+      ]
+    },
+    "text_status": {
+      "enum": [
+        "unknown",
+        "absent",
+        "present"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "required": [
+        "hard"
+      ],
+      "properties": {
+        "hard": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "object",
+                "required": [
+                  "type",
+                  "color_id"
+                ],
+                "properties": {
+                  "type": {
+                    "const": "color_id"
+                  },
+                  "color_id": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+                  },
+                  "region_id": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+                  }
+                },
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "required": [
+                  "type",
+                  "rgb"
+                ],
+                "properties": {
+                  "type": {
+                    "const": "exact_rgb"
+                  },
+                  "rgb": {
+                    "type": "object",
+                    "required": [
+                      "R",
+                      "G",
+                      "B"
+                    ],
+                    "properties": {
+                      "R": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 255
+                      },
+                      "G": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 255
+                      },
+                      "B": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 255
+                      }
+                    },
+                    "additionalProperties": false
+                  },
+                  "region_id": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+                  }
+                },
+                "additionalProperties": false
+              }
+            ]
+          }
+        },
+        "fidelity": {
+          "type": "object",
+          "required": [
+            "max_d100",
+            "evidence",
+            "regions"
+          ],
+          "properties": {
+            "max_d100": {
+              "type": "number",
+              "minimum": 0
+            },
+            "evidence": {
+              "type": "string",
+              "minLength": 1
+            },
+            "regions": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "region_id",
+                  "source_rgb"
+                ],
+                "properties": {
+                  "region_id": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+                  },
+                  "source_rgb": {
+                    "type": "object",
+                    "required": [
+                      "R",
+                      "G",
+                      "B"
+                    ],
+                    "properties": {
+                      "R": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 255
+                      },
+                      "G": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 255
+                      },
+                      "B": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 255
+                      }
+                    },
+                    "additionalProperties": false
+                  }
+                },
+                "additionalProperties": false
+              },
+              "minItems": 1
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

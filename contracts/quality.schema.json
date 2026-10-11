@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "palette_binding",
+    "status",
+    "aesthetic_calibration",
+    "accepted_solution_ids",
+    "missing_solution_ids",
+    "checks",
+    "failures",
+    "solution_count",
+    "limitations"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.1.0"
+    },
+    "palette_binding": {
+      "$ref": "common.schema.json"
+    },
+    "status": {
+      "enum": [
+        "complete",
+        "partial",
+        "blocked"
+      ]
+    },
+    "aesthetic_calibration": {
+      "enum": [
+        "uncalibrated",
+        "model_reviewed"
+      ]
+    },
+    "accepted_solution_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+      },
+      "uniqueItems": true
+    },
+    "missing_solution_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+      },
+      "uniqueItems": true
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "solution_id",
+          "machine",
+          "visual",
+          "accepted"
+        ],
+        "properties": {
+          "solution_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+          },
+          "machine": {
+            "enum": [
+              "pass",
+              "fail"
+            ]
+          },
+          "visual": {
+            "enum": [
+              "pass",
+              "not_accepted"
+            ]
+          },
+          "accepted": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "failures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "code",
+          "gate"
+        ],
+        "properties": {
+          "solution_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+          },
+          "code": {
+            "type": "string",
+            "minLength": 1
+          },
+          "message": {
+            "type": "string"
+          },
+          "gate": {
+            "enum": [
+              "machine",
+              "visual"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "solution_count": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 4,
+          "maximum": 6
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "additionalProperties": false
+}

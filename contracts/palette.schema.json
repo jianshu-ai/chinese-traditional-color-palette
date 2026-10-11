@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "traditional-color-palette/palette.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "palette_id", "display_name", "color_space", "colors"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "palette_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"},
+    "display_name": {"type": "string", "minLength": 1},
+    "color_space": {"const": "sRGB"},
+    "source": {"type": "object"},
+    "colors": {"type": "array", "items": {"$ref": "#/$defs/color"}}
+  },
+  "$defs": {
+    "color": {
+      "type": "object", "additionalProperties": false, "required": ["color_id", "name", "rgb"],
+      "properties": {
+        "color_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"},
+        "name": {"type": "string", "minLength": 1},
+        "rgb": {"type": "object", "additionalProperties": false, "required": ["R", "G", "B"], "properties": {"R": {"type": "integer", "minimum": 0, "maximum": 255}, "G": {"type": "integer", "minimum": 0, "maximum": 255}, "B": {"type": "integer", "minimum": 0, "maximum": 255}}},
+        "enabled": {"type": "boolean", "default": true},
+        "metadata": {"type": "object"},
+        "source": {"type": "object"}
+      }
+    }
+  }
+}

@@ -1,0 +1,501 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "palette_binding",
+    "author_plan_sha256",
+    "solution_count",
+    "generator",
+    "solutions"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.1.0"
+    },
+    "palette_binding": {
+      "$ref": "common.schema.json"
+    },
+    "author_plan_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "solution_count": {
+      "type": "integer",
+      "minimum": 4,
+      "maximum": 6
+    },
+    "generator": {
+      "const": "authored-plan-materializer-v2.1"
+    },
+    "solutions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/solution"
+      },
+      "minItems": 4,
+      "maxItems": 6
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "solution": {
+      "type": "object",
+      "required": [
+        "schema_version",
+        "solution_id",
+        "label",
+        "palette_binding",
+        "source_image_sha256",
+        "plan_sha256",
+        "design_intent",
+        "method",
+        "composition",
+        "colors",
+        "typography",
+        "scene_context",
+        "observation_inventory",
+        "coverage",
+        "reading_coverage"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "2.1.0"
+        },
+        "solution_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+        },
+        "label": {
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ]
+        },
+        "palette_binding": {
+          "$ref": "common.schema.json"
+        },
+        "source_image_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "plan_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "design_intent": {
+          "type": "string",
+          "minLength": 1
+        },
+        "method": {
+          "type": "object",
+          "required": [
+            "name",
+            "rationale"
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
+        },
+        "composition": {
+          "type": "string",
+          "minLength": 1
+        },
+        "colors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/color"
+          },
+          "minItems": 1
+        },
+        "typography": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/text_record"
+          }
+        },
+        "scene_context": {
+          "$ref": "coverage.schema.json#/$defs/scene_context"
+        },
+        "observation_inventory": {
+          "$ref": "coverage.schema.json#/$defs/observation_inventory"
+        },
+        "coverage": {
+          "$ref": "coverage.schema.json#/$defs/coverage"
+        },
+        "reading_coverage": {
+          "$ref": "coverage.schema.json#/$defs/reading_coverage"
+        }
+      },
+      "additionalProperties": false
+    },
+    "color": {
+      "type": "object",
+      "required": [
+        "color_id",
+        "name",
+        "rgb",
+        "hex",
+        "oklab",
+        "oklch",
+        "luminance",
+        "role",
+        "relationship",
+        "regions"
+      ],
+      "properties": {
+        "color_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rgb": {
+          "type": "object",
+          "required": [
+            "R",
+            "G",
+            "B"
+          ],
+          "properties": {
+            "R": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 255
+            },
+            "G": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 255
+            },
+            "B": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 255
+            }
+          },
+          "additionalProperties": false
+        },
+        "hex": {
+          "type": "string",
+          "pattern": "^#[0-9A-F]{6}$"
+        },
+        "oklab": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "oklch": {
+          "type": "array",
+          "items": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "luminance": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "relationship": {
+          "type": "string",
+          "minLength": 1
+        },
+        "regions": {
+          "type": "array",
+          "items": {
+            "$ref": "design-plan.schema.json#/$defs/region"
+          },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "text_record": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/computed_text_record"
+        },
+        {
+          "$ref": "#/$defs/visual_text_record"
+        }
+      ]
+    },
+    "computed_text_record": {
+      "type": "object",
+      "required": [
+        "text_region_id",
+        "background_region_id",
+        "intended_use",
+        "medium",
+        "minimum_contrast",
+        "threshold_reason",
+        "text_color",
+        "background_color",
+        "contrast"
+      ],
+      "properties": {
+        "text_region_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+        },
+        "background_region_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+        },
+        "intended_use": {
+          "type": "string",
+          "minLength": 1
+        },
+        "medium": {
+          "enum": [
+            "physical",
+            "digital"
+          ]
+        },
+        "minimum_contrast": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 1,
+              "maximum": 21
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "threshold_reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "text_color": {
+          "type": "object",
+          "required": [
+            "color_id",
+            "name",
+            "rgb",
+            "hex",
+            "oklab",
+            "oklch",
+            "luminance"
+          ],
+          "properties": {
+            "color_id": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rgb": {
+              "type": "object",
+              "required": [
+                "R",
+                "G",
+                "B"
+              ],
+              "properties": {
+                "R": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 255
+                },
+                "G": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 255
+                },
+                "B": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 255
+                }
+              },
+              "additionalProperties": false
+            },
+            "hex": {
+              "type": "string",
+              "pattern": "^#[0-9A-F]{6}$"
+            },
+            "oklab": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "oklch": {
+              "type": "array",
+              "items": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "luminance": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "additionalProperties": false
+        },
+        "background_color": {
+          "type": "object",
+          "required": [
+            "color_id",
+            "name",
+            "rgb",
+            "hex",
+            "oklab",
+            "oklch",
+            "luminance"
+          ],
+          "properties": {
+            "color_id": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rgb": {
+              "type": "object",
+              "required": [
+                "R",
+                "G",
+                "B"
+              ],
+              "properties": {
+                "R": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 255
+                },
+                "G": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 255
+                },
+                "B": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 255
+                }
+              },
+              "additionalProperties": false
+            },
+            "hex": {
+              "type": "string",
+              "pattern": "^#[0-9A-F]{6}$"
+            },
+            "oklab": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "oklch": {
+              "type": "array",
+              "items": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "luminance": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "additionalProperties": false
+        },
+        "contrast": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 21
+        }
+      },
+      "additionalProperties": false
+    },
+    "visual_text_record": {
+      "type": "object",
+      "required": [
+        "reading_id",
+        "mode",
+        "reason",
+        "target",
+        "contrast",
+        "limitation"
+      ],
+      "properties": {
+        "reading_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+        },
+        "mode": {
+          "const": "visual"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "target": {
+          "$ref": "coverage.schema.json#/$defs/reading_target"
+        },
+        "contrast": {
+          "type": "null"
+        },
+        "limitation": {
+          "const": "actual retained or variable background; no numeric contrast claim; current-image review required"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

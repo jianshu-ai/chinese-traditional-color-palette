@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dialogue-event.schema.json",
+  "description": "Caller/model interprets user language. This structured record does not authenticate intent or execute tools.",
+  "type": "object",
+  "required": [
+    "action",
+    "source",
+    "user_reply",
+    "message_reference"
+  ],
+  "properties": {
+    "action": {
+      "enum": [
+        "start",
+        "continue",
+        "feedback",
+        "stop"
+      ]
+    },
+    "source": {
+      "enum": [
+        "conversation",
+        "test_fixture"
+      ]
+    },
+    "user_reply": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "message_reference": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "target_count": {
+      "enum": [
+        null,
+        5,
+        10
+      ]
+    },
+    "feedback": {
+      "type": "object",
+      "required": [
+        "likes",
+        "dislikes",
+        "focus",
+        "no_new_feedback"
+      ],
+      "properties": {
+        "likes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "round_number",
+              "solution_id",
+              "reason"
+            ],
+            "properties": {
+              "round_number": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "solution_id": {
+                "enum": [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J"
+                ]
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "dislikes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/properties/feedback/properties/likes/items"
+          }
+        },
+        "focus": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        },
+        "no_new_feedback": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

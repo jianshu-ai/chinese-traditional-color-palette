@@ -1,0 +1,153 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "palette_binding",
+    "author_plan_sha256",
+    "solution_count",
+    "generator",
+    "solutions",
+    "object",
+    "preserve",
+    "source_image",
+    "mode",
+    "instruction"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.1.0"
+    },
+    "palette_binding": {
+      "$ref": "common.schema.json"
+    },
+    "author_plan_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "solution_count": {
+      "type": "integer",
+      "minimum": 4,
+      "maximum": 6
+    },
+    "generator": {
+      "const": "authored-plan-materializer-v2.1"
+    },
+    "solutions": {
+      "type": "array",
+      "items": {
+        "$ref": "candidate.schema.json#/$defs/solution"
+      },
+      "minItems": 4,
+      "maxItems": 6
+    },
+    "object": {
+      "type": "object",
+      "required": [
+        "kind",
+        "purpose",
+        "expression_relevant",
+        "text_status",
+        "paint_boundaries"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "toy",
+            "streetscape",
+            "packaging",
+            "other"
+          ]
+        },
+        "purpose": {
+          "type": "string",
+          "minLength": 1
+        },
+        "expression_relevant": {
+          "type": "boolean"
+        },
+        "text_status": {
+          "enum": [
+            "absent",
+            "present"
+          ]
+        },
+        "paint_boundaries": {
+          "enum": [
+            "redesign",
+            "preserve"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "preserve": {
+      "type": "object",
+      "required": [
+        "geometry",
+        "camera",
+        "material",
+        "notes"
+      ],
+      "properties": {
+        "geometry": {
+          "const": true
+        },
+        "camera": {
+          "const": true
+        },
+        "material": {
+          "const": true
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "source_image": {
+      "type": "object",
+      "required": [
+        "type",
+        "sha256"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "mode": {
+      "enum": [
+        "palette_design",
+        "faithful_recolor"
+      ]
+    },
+    "instruction": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": false
+}

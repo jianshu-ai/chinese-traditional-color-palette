@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.1.0",
+  "solution_count": {
+    "default": 5,
+    "minimum": 4,
+    "maximum": 6,
+    "nondefault_reason_required": true
+  },
+  "labels": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "labels_are_fidelity_tiers": false,
+  "color_count": "Only used colours with role, relationship, region and area reasons; independent of solution count.",
+  "area": {
+    "scope": "visible painted design regions",
+    "sum": 1,
+    "tolerance": 0.02,
+    "bases": [
+      "proposed",
+      "estimated"
+    ]
+  },
+  "method_selection": "Current-model authored, object-specific; no fixed recipe or index selection.",
+  "repair": {
+    "initial": 1,
+    "local_repair_max": 2,
+    "redesign_max": 1,
+    "registered_attempts_per_solution_max": 4,
+    "unregistered_tool_calls": "tracked by host, not observable by CLI"
+  },
+  "fidelity": "Only explicit faithful_recolor with author-specified max_d100, observed source RGB and user evidence.",
+  "typography": "Actual observed reading targets/states require coverage. Computable digital normal text >=4.5, evidenced large text >=3; physical thresholds remain contextual. Retained/variable backgrounds use current-image visual review with contrast:null, never invented palette facts.",
+  "visual_gate": {
+    "required_checks": [
+      "aesthetics",
+      "purpose",
+      "expression",
+      "regions",
+      "color_relationships",
+      "preservation",
+      "design_consistency",
+      "typography",
+      "distinctiveness"
+    ],
+    "acceptance": "Actual current image seen, accept decision, applicable checks pass with region evidence, zero unresolved issues.",
+    "automatic_aesthetic_score": false
+  },
+  "image_validation": "signature_only_not_full_decode",
+  "coverage": "All observed elements require a disposition; every painted region must map to a recolored element. Retained visual associations do not count as recoloring or consume palette area."
+}

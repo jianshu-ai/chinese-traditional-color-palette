@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "solution_id",
+    "label",
+    "palette_binding",
+    "source_image_sha256",
+    "plan_sha256",
+    "design_intent",
+    "method",
+    "composition",
+    "colors",
+    "typography",
+    "image_sha256",
+    "area_scope",
+    "scene_context",
+    "observation_inventory",
+    "coverage",
+    "reading_coverage"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.1.0"
+    },
+    "solution_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+    },
+    "label": {
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ]
+    },
+    "palette_binding": {
+      "$ref": "common.schema.json"
+    },
+    "source_image_sha256": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "plan_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "design_intent": {
+      "type": "string",
+      "minLength": 1
+    },
+    "method": {
+      "type": "object",
+      "required": [
+        "name",
+        "rationale"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "composition": {
+      "type": "string",
+      "minLength": 1
+    },
+    "colors": {
+      "type": "array",
+      "items": {
+        "$ref": "candidate.schema.json#/$defs/color"
+      },
+      "minItems": 1
+    },
+    "typography": {
+      "type": "array",
+      "items": {
+        "$ref": "candidate.schema.json#/$defs/text_record"
+      }
+    },
+    "image_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "area_scope": {
+      "const": "visible painted design shares, not measured physical surface area"
+    },
+    "scene_context": {
+      "$ref": "coverage.schema.json#/$defs/scene_context"
+    },
+    "observation_inventory": {
+      "$ref": "coverage.schema.json#/$defs/observation_inventory"
+    },
+    "coverage": {
+      "$ref": "coverage.schema.json#/$defs/coverage"
+    },
+    "reading_coverage": {
+      "$ref": "coverage.schema.json#/$defs/reading_coverage"
+    }
+  },
+  "additionalProperties": false
+}

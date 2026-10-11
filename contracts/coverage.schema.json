@@ -1,0 +1,301 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "scene_context": {
+      "type": "object",
+      "required": [
+        "object_module",
+        "overlays",
+        "preferences"
+      ],
+      "properties": {
+        "object_module": {
+          "enum": [
+            "storefront",
+            "residential_streetscape",
+            "apparel",
+            "toy_product",
+            "text_design",
+            "generic"
+          ]
+        },
+        "overlays": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "preferences": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "statement",
+              "scope",
+              "source"
+            ],
+            "properties": {
+              "statement": {
+                "type": "string",
+                "minLength": 1
+              },
+              "scope": {
+                "type": "string",
+                "minLength": 1
+              },
+              "source": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "reading_target": {
+      "type": "object",
+      "required": [
+        "reading_id",
+        "text_element_id",
+        "background_element_id",
+        "state",
+        "medium",
+        "description",
+        "contrast_class"
+      ],
+      "properties": {
+        "reading_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+        },
+        "text_element_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+        },
+        "background_element_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+        },
+        "state": {
+          "type": "string",
+          "minLength": 1
+        },
+        "medium": {
+          "enum": [
+            "physical",
+            "digital"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "contrast_class": {
+          "enum": [
+            "normal_text",
+            "large_text",
+            "contextual"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "medium": {
+                "const": "digital"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "contrast_class": {
+                "enum": [
+                  "normal_text",
+                  "large_text"
+                ]
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "contrast_class": {
+                "const": "contextual"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "observation_inventory": {
+      "type": "object",
+      "required": [
+        "elements",
+        "reading_targets"
+      ],
+      "properties": {
+        "elements": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "element_id",
+              "description",
+              "kind"
+            ],
+            "properties": {
+              "element_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "enum": [
+                  "surface",
+                  "text",
+                  "prop",
+                  "context"
+                ]
+              }
+            },
+            "additionalProperties": false
+          },
+          "minItems": 1
+        },
+        "reading_targets": {
+          "type": "array",
+          "items": {
+            "$ref": "coverage.schema.json#/$defs/reading_target"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "coverage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "element_id",
+          "disposition",
+          "region_ids",
+          "reason"
+        ],
+        "properties": {
+          "element_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+          },
+          "disposition": {
+            "enum": [
+              "recolor",
+              "preserve",
+              "out_of_scope"
+            ]
+          },
+          "region_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+            },
+            "uniqueItems": true
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "disposition": {
+                  "const": "recolor"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "region_ids": {
+                  "minItems": 1
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "reading_coverage": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "type": "object",
+            "required": [
+              "reading_id",
+              "mode",
+              "reason",
+              "text_region_id",
+              "background_region_id"
+            ],
+            "properties": {
+              "reading_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+              },
+              "mode": {
+                "const": "paired"
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              },
+              "text_region_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+              },
+              "background_region_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+              }
+            },
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "required": [
+              "reading_id",
+              "mode",
+              "reason"
+            ],
+            "properties": {
+              "reading_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+              },
+              "mode": {
+                "const": "visual"
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        ]
+      }
+    }
+  },
+  "description": "Run 2.1.0 observations are independent of design regions. Runtime validates reference completeness, many-to-many recolor mappings, actual reading pairings, and digital contrast floors. These records are not machine proof of exhaustive image observation or visual beauty."
+}

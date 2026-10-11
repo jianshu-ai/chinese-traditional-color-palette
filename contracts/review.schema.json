@@ -1,0 +1,419 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "solution_id",
+    "palette_binding",
+    "source_image_sha256",
+    "plan_sha256",
+    "image_sha256",
+    "design_description_sha256",
+    "image_seen",
+    "decision",
+    "reviewer",
+    "checks",
+    "issues",
+    "scene_context"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.1.0"
+    },
+    "solution_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+    },
+    "palette_binding": {
+      "$ref": "common.schema.json"
+    },
+    "source_image_sha256": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "plan_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "image_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "design_description_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "image_seen": {
+      "type": "boolean"
+    },
+    "decision": {
+      "enum": [
+        "pending",
+        "accept",
+        "reject"
+      ]
+    },
+    "reviewer": {
+      "type": "object",
+      "required": [
+        "kind",
+        "context"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "current_model",
+            "human"
+          ]
+        },
+        "context": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "checks": {
+      "type": "object",
+      "required": [
+        "aesthetics",
+        "purpose",
+        "expression",
+        "regions",
+        "color_relationships",
+        "preservation",
+        "design_consistency",
+        "typography",
+        "distinctiveness"
+      ],
+      "properties": {
+        "aesthetics": {
+          "type": "object",
+          "required": [
+            "status",
+            "region_ids",
+            "observation"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "pending",
+                "pass",
+                "fail",
+                "not_applicable"
+              ]
+            },
+            "region_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+              }
+            },
+            "observation": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "purpose": {
+          "type": "object",
+          "required": [
+            "status",
+            "region_ids",
+            "observation"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "pending",
+                "pass",
+                "fail",
+                "not_applicable"
+              ]
+            },
+            "region_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+              }
+            },
+            "observation": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "expression": {
+          "type": "object",
+          "required": [
+            "status",
+            "region_ids",
+            "observation"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "pending",
+                "pass",
+                "fail",
+                "not_applicable"
+              ]
+            },
+            "region_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+              }
+            },
+            "observation": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "regions": {
+          "type": "object",
+          "required": [
+            "status",
+            "region_ids",
+            "observation",
+            "element_ids"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "pending",
+                "pass",
+                "fail",
+                "not_applicable"
+              ]
+            },
+            "region_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+              }
+            },
+            "observation": {
+              "type": "string"
+            },
+            "element_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+              },
+              "uniqueItems": true
+            }
+          },
+          "additionalProperties": false
+        },
+        "color_relationships": {
+          "type": "object",
+          "required": [
+            "status",
+            "region_ids",
+            "observation"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "pending",
+                "pass",
+                "fail",
+                "not_applicable"
+              ]
+            },
+            "region_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+              }
+            },
+            "observation": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "preservation": {
+          "type": "object",
+          "required": [
+            "status",
+            "region_ids",
+            "observation"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "pending",
+                "pass",
+                "fail",
+                "not_applicable"
+              ]
+            },
+            "region_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+              }
+            },
+            "observation": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "design_consistency": {
+          "type": "object",
+          "required": [
+            "status",
+            "region_ids",
+            "observation"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "pending",
+                "pass",
+                "fail",
+                "not_applicable"
+              ]
+            },
+            "region_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+              }
+            },
+            "observation": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "typography": {
+          "type": "object",
+          "required": [
+            "status",
+            "region_ids",
+            "observation",
+            "reading_ids"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "pending",
+                "pass",
+                "fail",
+                "not_applicable"
+              ]
+            },
+            "region_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+              }
+            },
+            "observation": {
+              "type": "string"
+            },
+            "reading_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+              },
+              "uniqueItems": true
+            }
+          },
+          "additionalProperties": false
+        },
+        "distinctiveness": {
+          "type": "object",
+          "required": [
+            "status",
+            "region_ids",
+            "observation"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "pending",
+                "pass",
+                "fail",
+                "not_applicable"
+              ]
+            },
+            "region_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+              }
+            },
+            "observation": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "region_ids",
+          "problem",
+          "action"
+        ],
+        "properties": {
+          "region_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+            },
+            "minItems": 1
+          },
+          "problem": {
+            "type": "string",
+            "minLength": 1
+          },
+          "action": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "scene_context": {
+      "$ref": "coverage.schema.json#/$defs/scene_context"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Pending scaffold is allowed; acceptance requires actual current-image review, all applicable checks pass with region evidence, correct N/A only for absent expression/typography, no unresolved issues. Binding hashes must match current artifacts. This is attributed model/human judgement, not machine proof of beauty."
+}

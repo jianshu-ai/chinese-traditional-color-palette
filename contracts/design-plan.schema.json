@@ -1,0 +1,356 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "palette_binding",
+    "source_image_sha256",
+    "solution_count",
+    "count_reason",
+    "object",
+    "preserve",
+    "solutions",
+    "scene_context",
+    "observation_inventory"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.1.0"
+    },
+    "palette_binding": {
+      "$ref": "common.schema.json"
+    },
+    "source_image_sha256": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "solution_count": {
+      "type": "integer",
+      "minimum": 4,
+      "maximum": 6
+    },
+    "count_reason": {
+      "type": "string"
+    },
+    "object": {
+      "type": "object",
+      "required": [
+        "kind",
+        "purpose",
+        "expression_relevant",
+        "text_status",
+        "paint_boundaries"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "toy",
+            "streetscape",
+            "packaging",
+            "other"
+          ]
+        },
+        "purpose": {
+          "type": "string",
+          "minLength": 1
+        },
+        "expression_relevant": {
+          "type": "boolean"
+        },
+        "text_status": {
+          "enum": [
+            "absent",
+            "present"
+          ]
+        },
+        "paint_boundaries": {
+          "enum": [
+            "redesign",
+            "preserve"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "preserve": {
+      "type": "object",
+      "required": [
+        "geometry",
+        "camera",
+        "material",
+        "notes"
+      ],
+      "properties": {
+        "geometry": {
+          "const": true
+        },
+        "camera": {
+          "const": true
+        },
+        "material": {
+          "const": true
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "solutions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/solution"
+      },
+      "minItems": 4,
+      "maxItems": 6
+    },
+    "scene_context": {
+      "$ref": "coverage.schema.json#/$defs/scene_context"
+    },
+    "observation_inventory": {
+      "$ref": "coverage.schema.json#/$defs/observation_inventory"
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "region": {
+      "type": "object",
+      "required": [
+        "region_id",
+        "description",
+        "shape",
+        "area"
+      ],
+      "properties": {
+        "region_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "shape": {
+          "type": "string",
+          "minLength": 1
+        },
+        "area": {
+          "type": "object",
+          "required": [
+            "value",
+            "basis",
+            "reason"
+          ],
+          "properties": {
+            "value": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 1
+            },
+            "basis": {
+              "enum": [
+                "proposed",
+                "estimated"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "color": {
+      "type": "object",
+      "required": [
+        "color_id",
+        "role",
+        "relationship",
+        "regions"
+      ],
+      "properties": {
+        "color_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+        },
+        "role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "relationship": {
+          "type": "string",
+          "minLength": 1
+        },
+        "regions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/region"
+          },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "text_pairing": {
+      "type": "object",
+      "required": [
+        "text_region_id",
+        "background_region_id",
+        "intended_use",
+        "medium",
+        "minimum_contrast",
+        "threshold_reason"
+      ],
+      "properties": {
+        "text_region_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+        },
+        "background_region_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+        },
+        "intended_use": {
+          "type": "string",
+          "minLength": 1
+        },
+        "medium": {
+          "enum": [
+            "physical",
+            "digital"
+          ]
+        },
+        "minimum_contrast": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 1,
+              "maximum": 21
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "threshold_reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "solution": {
+      "type": "object",
+      "required": [
+        "solution_id",
+        "label",
+        "design_intent",
+        "method",
+        "composition",
+        "colors",
+        "text_pairings",
+        "coverage",
+        "reading_coverage"
+      ],
+      "properties": {
+        "solution_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+        },
+        "label": {
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ]
+        },
+        "design_intent": {
+          "type": "string",
+          "minLength": 1
+        },
+        "method": {
+          "type": "object",
+          "required": [
+            "name",
+            "rationale"
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
+        },
+        "composition": {
+          "type": "string",
+          "minLength": 1
+        },
+        "colors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/color"
+          },
+          "minItems": 1
+        },
+        "text_pairings": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/text_pairing"
+          }
+        },
+        "coverage": {
+          "$ref": "coverage.schema.json#/$defs/coverage"
+        },
+        "reading_coverage": {
+          "$ref": "coverage.schema.json#/$defs/reading_coverage"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "solution_count": {
+            "enum": [
+              4,
+              6
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "count_reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  ],
+  "description": "Author IDs, colour roles/relations, region geometry and area reasons; facts derived from the frozen palette. Runtime additionally checks chosen count, uniqueness, palette membership, layout duplicates, total area and constraints."
+}
