@@ -1,0 +1,28 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*
+secrets*
+
+# Local task data and generated output
+runs/
+outputs/
+output/
+work/
+snapshots/
+private/
+.palette-cases/
+.palette-*/
+*.log
+
+# Python and operating-system caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+.vscode/
+.idea/
