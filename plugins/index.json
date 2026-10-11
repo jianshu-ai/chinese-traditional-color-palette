@@ -1,0 +1,47 @@
+{
+  "interface_version": "1.0",
+  "plugins": [
+    {
+      "id": "web",
+      "path": "plugins/web.md",
+      "version": "0.9.0",
+      "summary": "网站、界面截图及可见交互状态",
+      "enabled": true
+    },
+    {
+      "id": "built_environment",
+      "path": "plugins/built_environment.md",
+      "version": "0.9.0",
+      "summary": "建筑、生活街景、牌楼、店面与实体招牌",
+      "enabled": true
+    },
+    {
+      "id": "print_packaging",
+      "path": "plugins/print_packaging.md",
+      "version": "0.9.0",
+      "summary": "印刷品、海报、包装与插画卡片，按实际编辑目标分类",
+      "enabled": true
+    },
+    {
+      "id": "apparel",
+      "path": "plugins/apparel.md",
+      "version": "0.9.0",
+      "summary": "校服、旗袍、表演服饰、配饰与道具",
+      "enabled": true
+    },
+    {
+      "id": "toy_product",
+      "path": "plugins/toy_product.md",
+      "version": "0.9.0",
+      "summary": "玩具、角色产品与一般产品表面",
+      "enabled": true
+    },
+    {
+      "id": "generic",
+      "path": "plugins/generic.md",
+      "version": "0.9.0",
+      "summary": "无匹配、分类不确定或所选插件不可用",
+      "enabled": true
+    }
+  ]
+}
