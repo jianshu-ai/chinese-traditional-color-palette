@@ -1,0 +1,4 @@
+interface:
+  display_name: "中国传统色配色设计"
+  short_description: "主动看图，补齐需求和每轮五或十张数量后自动配色，看图交付并询问继续或结束"
+  default_prompt: "使用 $traditional-color-palette，主动分析原图，补齐需求并询问本轮五张还是十张，答齐后自动设计、出图、看图和交付对比页，每轮询问继续或结束。"
